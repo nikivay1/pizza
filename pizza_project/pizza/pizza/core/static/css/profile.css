@@ -1,0 +1,506 @@
+/* line 16, ../sass/profile.sass */
+.profile {
+  background: url(/static/img/pattern.png) center;
+  background-size: contain;
+  flex-direction: row;
+  font-family: 'GothamPro';
+  font-size: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.profile div {
+  display: flex;
+}
+
+.profile input {
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  color: #000;
+  font-size: 14px;
+}
+
+/* line 27, ../sass/profile.sass */
+.profile-main {
+  margin-top: 35px;
+  margin-bottom: 135px;
+  background: white;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 740px;
+  padding-bottom: 25px;
+}
+
+/* line 36, ../sass/profile.sass */
+.profile-title {
+  padding: 21px 35px;
+  font-size: 16px;
+  font-family: 'GothamPro-Medium';
+  background: #fafafa;
+  border-radius: 10px;
+  align-items: center;
+}
+/* line 43, ../sass/profile.sass */
+.profile-title img {
+  margin-left: auto;
+}
+/* line 45, ../sass/profile.sass */
+.profile-change-btn {
+  color: #e3000f;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  min-height: 20px;
+  margin-left: auto;
+  padding-left: 29px;
+}
+.profile-save-btn {
+  color: #3c8636;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  min-height: 20px;
+  margin-left: auto;
+  padding-left: 27px;
+}
+.profile-change-btn:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 0;
+  margin-top: -10px;
+  background: url('../img/profile/pencil.png');
+}
+.profile-save-btn:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 0;
+  margin-top: -9px;
+  background: url('../img/profile/save.png');
+}
+
+
+/* line 51, ../sass/profile.sass */
+.profile-warning {
+  padding: 10px 35px;
+  background: #e3000f;
+  color: white;
+  align-items: center;
+}
+/* line 55, ../sass/profile.sass */
+.profile-warning img {
+  margin-right: 15px;
+}
+/* line 57, ../sass/profile.sass */
+/*.profile-warning img:last-of-type {
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-right: 0px;
+}*/
+
+/* line 64, ../sass/profile.sass */
+.profile-forms {
+  padding: 0px 35px;
+  flex-wrap: wrap;
+}
+
+/* line 68, ../sass/profile.sass */
+.profile-form {
+  width: 300px;
+  height: 45px;
+  background: #fafafa;
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+  margin-right: 33px;
+  margin-top: 17px;
+  align-items: center;
+}
+/* line 77, ../sass/profile.sass */
+.profile-form > span {
+  margin: 0px 20px;
+  color: #000000;
+}
+/* line 80, ../sass/profile.sass */
+.profile-form .profile-label {
+  margin-left: auto;
+  color: #bdbdbd;
+}
+.profile-form img {
+  margin-left: auto;
+  margin-right: 20px;
+}
+/* line 83, ../sass/profile.sass */
+.profile-form div {
+  width: 100%;
+  color: #e3000f;
+  justify-content: center;
+}
+
+/* line 88, ../sass/profile.sass */
+.form-margin {
+  margin-top: 15px;
+}
+
+/* line 91, ../sass/profile.sass */
+.grey-color {
+  color: #bdbdbd !important;
+}
+
+/* line 94, ../sass/profile.sass */
+.profile-history {
+  flex-direction: column;
+  padding: 0px 35px;
+  margin-top: 30px;
+}
+/* line 98, ../sass/profile.sass */
+.profile-history div {
+  width: 633px;
+  height: 45px;
+  border: 1px solid #f5f5f5;
+  background: #fafafa;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+/* line 106, ../sass/profile.sass */
+.profile-history div span:first-of-type {
+  margin-left: 19px;
+  color: #000000;
+}
+/* line 109, ../sass/profile.sass */
+.profile-history div > span:nth-child(2) {
+  color: #bdbdbd;
+  margin-left: auto;
+}
+/* line 112, ../sass/profile.sass */
+.profile-history div span:last-of-type {
+  margin-right: 19px;
+  font-family: 'GothamPro-Medium';
+  cursor: pointer;
+}
+.check_order_status > span {
+  margin: 0 !important;
+}
+.check_order_status > img {
+  height: 16px;
+  width: auto !important;
+}
+
+/* line 117, ../sass/profile.sass */
+.history-title {
+  font-family: 'GothamPro-Medium';
+  font-size: 16px;
+  color: #000000;
+}
+
+/* line 122, ../sass/profile.sass */
+.profile-social {
+  flex-direction: column;
+  padding: 0px 35px;
+  margin-top: 34px;
+}
+
+/* line 127, ../sass/profile.sass */
+.profile-social-network {
+  margin-top: 19px;
+  width: 387px;
+  align-items: center;
+}
+/* line 131, ../sass/profile.sass */
+.profile-social-network img {
+  margin-right: 9px;
+  width: 24px;
+  height: 24px;
+}
+/* line 135, ../sass/profile.sass */
+.profile-social-network div {
+  margin-left: auto;
+  height: 40px;
+  width: 170px;
+  color: white;
+  font-family: 'GothamPro-Medium';
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+}
+
+/* line 145, ../sass/profile.sass */
+.profile-vk {
+  background: #507299;
+}
+
+/* line 148, ../sass/profile.sass */
+.profile-fb {
+  background: #3b5998;
+}
+
+/* line 151, ../sass/profile.sass */
+.profile-tw {
+  background: #4099ff;
+}
+
+/* line 154, ../sass/profile.sass */
+.profile-go {
+  background: #d84b37;
+}
+
+/* line 157, ../sass/profile.sass */
+.social-title {
+  font-family: 'GothamPro-Medium';
+  font-size: 16px;
+  color: #000000;
+}
+
+/* line 164, ../sass/profile.sass */
+.profile-aside {
+  flex-direction: column;
+}
+
+/* line 167, ../sass/profile.sass */
+.profile-bucket {
+  margin-top: 35px;
+  margin-left: 20px;
+  width: 405px;
+  padding-bottom: 30px;
+  background: white;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+/* line 176, ../sass/profile.sass */
+.bucket-header {
+  padding: 20px 35px;
+  font-size: 16px;
+  font-family: 'GothamPro-Medium';
+  background: #fafafa;
+  border-radius: 10px;
+}
+/* line 182, ../sass/profile.sass */
+.bucket-header span:last-of-type {
+  color: #3d8636;
+  margin-left: auto;
+}
+
+/* line 186, ../sass/profile.sass */
+.bucket-list {
+  flex-direction: column;
+  padding: 0px 28px;
+  margin-top: 7px;
+}
+
+/* line 191, ../sass/profile.sass */
+.bucket-menu {
+  align-items: center;
+}
+/* line 194, ../sass/profile.sass */
+.bucket-menu img {
+  margin-right: 10px;
+}
+/* line 196, ../sass/profile.sass */
+.bucket-menu div {
+  flex-direction: column;
+}
+/* line 198, ../sass/profile.sass */
+.bucket-menu div span {
+  line-height: 20px;
+}
+/* line 200, ../sass/profile.sass */
+.bucket-menu div span:last-of-type {
+  color: #bdbdbd;
+}
+
+/* line 203, ../sass/profile.sass */
+.bucket-price {
+  margin-left: auto;
+  font-family: 'GothamPro-Medium';
+  margin-right: 6px;
+  position: relative;
+  top: -12px;
+}
+
+/* line 211, ../sass/profile.sass */
+.bucket-buttons {
+  padding: 0px 35px;
+  margin-top: 18px;
+}
+/* line 214, ../sass/profile.sass */
+.bucket-buttons div {
+  border-radius: 500px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'GothamPro-Medium';
+  color: white;
+  cursor: pointer;
+}
+/* line 222, ../sass/profile.sass */
+.bucket-buttons div:first-of-type {
+  width: 130px;
+  margin-right: 10px;
+  background: #000000;
+}
+/* line 226, ../sass/profile.sass */
+.bucket-buttons div:last-of-type {
+  width: 195px;
+  background: #3d8636;
+}
+
+/* line 230, ../sass/profile.sass */
+.profile-favorite {
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: white;
+  width: 405px;
+  flex-direction: column;
+}
+
+/* line 239, ../sass/profile.sass */
+.favorite-header {
+  padding: 20px 32px;
+  font-size: 16px;
+  font-family: 'GothamPro-Medium';
+  background: #fafafa;
+  border-radius: 10px;
+}
+/* line 245, ../sass/profile.sass */
+.favorite-header img {
+  height: 19px;
+  width: 14px;
+  margin-left: auto;
+  opacity: 0.4;
+  margin-right: 5px;
+}
+
+/* line 252, ../sass/profile.sass */
+.favorite-items {
+  padding: 30px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'GothamPro-Medium';
+  color: #bdbdbd;
+}
+/* line 260, ../sass/profile.sass */
+.favorite-items span {
+  margin-top: 15px;
+}
+
+@media (max-width: 780px) {
+  .profile {
+    padding: 90px 10px 35px;
+  }
+  .profile-main {
+    width: 100%;
+    margin: 35px auto 0;
+  }
+  .profile-history div {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+  .profile-forms {
+    display: block;
+  }
+  .profile-form {
+    width: 100%;
+    margin-right: 0;
+    height: auto;
+    min-height: 45px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 680px) {
+  .profile {
+    padding-top: 87px;
+    margin-top: 30px !important;
+  }
+  .profile-main {
+    margin-top: 0;
+  }
+  .profile-history div {
+    display: block;
+    padding: 10px 20px;
+    position: relative;
+  }
+  .profile-history div > span {
+    display: block;
+  }
+  .profile-history div > span:first-of-type {
+    margin-left: 0;
+  }
+  .profile-history div > span:nth-child(3) {
+    display: none;
+  }
+  .check_order_status {
+    position: absolute;
+    right: 20px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    margin-top: -8px;
+    text-align: center;
+  }
+  .bucket-menu {
+    margin: 10px 0;
+  }
+  .bucket-menu div span {
+    line-height: normal;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  .bucket-buttons div {
+    margin: 5px;
+  }
+  .profile-forms {
+    padding: 0 20px;
+  }
+  .profile-form img {
+    margin-right: 0;
+  }
+  .profile-form {
+    padding: 15px;
+    min-height: 0;
+  }
+  .profile-form span {
+    margin: 0;
+  }
+  .profile-form .profile-label {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile-social-network {
+    width: 100%;
+  }
+  .profile-bucket,.profile-favorite {
+    width: 100%;
+    margin-left: 0;
+  }
+  .bucket-buttons {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile {
+    padding-top: 72px;
+  }
+}

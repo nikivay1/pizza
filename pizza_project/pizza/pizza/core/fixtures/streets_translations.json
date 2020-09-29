@@ -1,0 +1,704 @@
+[
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 1,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041d\u0430\u0431\u0435\u0440\u0435\u0436\u043d\u0430\u044f",
+      "master": 1
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 2,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0442\u0430\u043d\u0438\u0441\u043b\u0430\u0432\u0441\u043a\u043e\u0433\u043e",
+      "master": 2
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 3,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0413\u043e\u043b\u0443\u0431\u0430\u044f",
+      "master": 3
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 4,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u042e\u0436\u043d\u044b\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
+      "master": 4
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 5,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041d\u0430\u0431\u0435\u0440\u0435\u0436\u043d\u0430\u044f",
+      "master": 5
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 6,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0442\u0430\u043d\u0438\u0441\u043b\u0430\u0432\u0441\u043a\u043e\u0433\u043e",
+      "master": 6
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 7,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0413\u043e\u043b\u0443\u0431\u0430\u044f",
+      "master": 7
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 8,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u042e\u0436\u043d\u044b\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
+      "master": 8
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 9,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0426\u0432\u0435\u0442\u043e\u0447\u043d\u0430\u044f",
+      "master": 9
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 10,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041d\u0430\u0433\u043e\u0440\u043d\u044b\u0439 \u0442\u0443\u043f\u0438\u043a",
+      "master": 10
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 11,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041b\u0443\u0433\u043e\u0432\u0430\u044f",
+      "master": 11
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 12,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0422\u044e\u043b\u044c\u043f\u0430\u043d\u043e\u0432",
+      "master": 12
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 13,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041b\u0443\u043d\u0430\u0447\u0430\u0440\u0441\u043a\u043e\u0433\u043e",
+      "master": 13
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 14,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041a\u0430\u0441\u043f\u0438\u0439\u0441\u043a\u0430\u044f",
+      "master": 14
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 15,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0418\u043c\u0435\u0440\u0438\u0442\u0438\u043d\u0441\u043a\u0438\u0439 \u043c\u043e\u0440\u0441\u043a\u043e\u0439 \u043f\u043e\u0440\u0442",
+      "master": 15
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 16,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u0435\u0440\u0441\u043f\u0435\u043a\u0442\u0438\u0432\u043d\u0430\u044f",
+      "master": 16
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 17,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u0430\u0440\u0443\u0441\u043d\u0430\u044f",
+      "master": 17
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 18,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0413\u0438\u0430\u0446\u0438\u043d\u0442\u043e\u0432\u0430\u044f",
+      "master": 18
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 19,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0430\u0440\u0430\u0442\u043e\u0432\u0441\u043a\u0430\u044f",
+      "master": 19
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 20,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0430\u0440\u0430\u0442\u043e\u0432\u0441\u043a\u0438\u0439 \u043f\u0435\u0440\u0435\u0443\u043b\u043e\u043a",
+      "master": 20
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 21,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0422\u0440\u0438\u0443\u043c\u0444\u0430\u043b\u044c\u043d\u0430\u044f",
+      "master": 21
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 22,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041c\u043e\u0440\u0441\u043a\u043e\u0439 \u0431\u0443\u043b\u044c\u0432\u0430\u0440",
+      "master": 22
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 23,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0413\u0443\u0431\u0435\u0440\u043d\u0441\u043a\u0430\u044f",
+      "master": 23
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 24,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041e\u043b\u0438\u043c\u043f\u0438\u0439\u0441\u043a\u0438\u0439 \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442",
+      "master": 24
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 25,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041a\u0430\u0437\u0430\u0447\u044c\u044f",
+      "master": 25
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 26,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u043e\u0441\u0435\u043b\u043e\u043a \u043c\u0438\u0440\u043d\u044b\u0439",
+      "master": 26
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 27,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0416\u0443\u0440\u043d\u0430\u043b\u0438\u0441\u0442\u043e\u0432",
+      "master": 27
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 28,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041a\u043b\u0435\u043d\u043e\u0432\u0430\u044f",
+      "master": 28
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 29,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0442\u0430\u0440\u043e\u043e\u0445\u043e\u0442\u043d\u0438\u0447\u044c\u044f",
+      "master": 29
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 30,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0420\u0443\u0436\u0435\u0439\u043d\u0430\u044f",
+      "master": 30
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 31,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0425\u0443\u0442\u043e\u0440\u0441\u043a\u0430\u044f",
+      "master": 31
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 32,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0418\u0432\u043e\u0432\u044b\u0439 \u043f\u0435\u0440\u0435\u0443\u043b\u043e\u043a",
+      "master": 32
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 33,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041c\u0430\u0440\u0441\u043e\u0432\u044b\u0439 \u043f\u0435\u0440\u0435\u0443\u043b\u043e\u043a",
+      "master": 33
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 34,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0411\u0435\u0440\u0435\u0437\u043e\u0432\u044b\u0439 \u043f\u0435\u0440\u0435\u0443\u043b\u043e\u043a",
+      "master": 34
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 35,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u0435\u0440\u0435\u043f\u0435\u043b\u0438\u043d\u044b\u0439 \u043f\u0435\u0440\u0435\u0443\u043b\u043e\u043a",
+      "master": 35
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 36,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u0438\u0445\u0442\u043e\u0432\u044b\u0439 \u043f\u0435\u0440\u0435\u0443\u043b\u043e\u043a",
+      "master": 36
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 37,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u0435\u0440\u0435\u0443\u043b\u043e\u043a \u043a\u0443\u0432\u0448\u0438\u043a\u043d\u043e\u043a",
+      "master": 37
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 38,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0422\u0440\u043e\u0441\u0442\u043d\u0438\u043a\u043e\u0432\u0430\u044f",
+      "master": 38
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 39,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041a\u0430\u043c\u044b\u0448\u043e\u0432\u0430\u044f",
+      "master": 39
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 40,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u0435\u0440\u0435\u043b\u0435\u0442\u043d\u0430\u044f",
+      "master": 40
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 41,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0422\u0440\u0438\u0443\u043c\u0444\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u043e\u0435\u0437\u0434",
+      "master": 41
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 42,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u044f",
+      "master": 42
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 43,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u0430\u044f",
+      "master": 43
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 44,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0443\u0431\u0442\u0440\u043e\u043f\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+      "master": 44
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 45,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041b\u0435\u0431\u0435\u0434\u0438\u043d\u0430\u044f",
+      "master": 45
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 46,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u043f\u0430\u0441\u0441\u043a\u0430\u044f",
+      "master": 46
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 47,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0425\u0430\u0434\u044b\u0436\u0435\u043d\u0441\u043a\u0430\u044f",
+      "master": 47
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 48,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0411\u0430\u043a\u0438\u043d\u0441\u043a\u0430\u044f",
+      "master": 48
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 49,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041c\u0438\u043d\u0434\u0430\u043b\u044c\u043d\u0430\u044f",
+      "master": 49
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 50,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041a\u0443\u0442\u0430\u0438\u0441\u0441\u043a\u0430\u044f",
+      "master": 50
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 51,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0423\u0440\u043e\u0436\u0430\u0439\u043d\u0430\u044f",
+      "master": 51
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 52,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0412\u0435\u0441\u0435\u043b\u0430\u044f",
+      "master": 52
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 53,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0410\u043f\u0440\u0435\u043b\u044c\u0441\u043a\u0430\u044f",
+      "master": 53
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 54,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041b\u0438\u0441\u0442\u043e\u043f\u0430\u0434\u043d\u0430\u044f",
+      "master": 54
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 55,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0420\u0435\u043a\u043e\u0440\u0434\u043e\u0432",
+      "master": 55
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 56,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041a\u043e\u043d\u0442\u0438\u043d\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442",
+      "master": 56
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 57,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0442\u0430\u0440\u043e\u043e\u0431\u0440\u044f\u0434\u0447\u0435\u0441\u043a\u0430\u044f",
+      "master": 57
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 58,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0422\u0430\u0432\u0440\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+      "master": 58
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 59,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0424\u0438\u0433\u0443\u0440\u043d\u0430\u044f",
+      "master": 59
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 60,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0414\u0438\u0431\u0440\u043e\u0432\u0430",
+      "master": 60
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 61,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041c\u0435\u0442\u0440\u0435\u0432\u0435\u043b\u0438",
+      "master": 61
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 62,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0425\u043e\u043a\u043a\u0435\u0439\u043d\u0430\u044f",
+      "master": 62
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 63,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0412\u043e\u0439\u0442\u0435\u043d\u043a\u043e",
+      "master": 63
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 64,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0411\u0443\u043b\u044c\u0432\u0430\u0440 \u043d\u0430\u0434\u0435\u0436\u0434",
+      "master": 64
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 65,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0426\u0438\u043c\u043b\u044f\u043d\u0441\u043a\u0430\u044f",
+      "master": 65
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 66,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0423\u0440\u0438\u0446\u043a\u043e\u0433\u043e",
+      "master": 66
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 67,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0442\u0430\u0440\u043e\u0448\u043a\u043e\u043b\u044c\u043d\u0430\u044f",
+      "master": 67
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 68,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041a\u0440\u0430\u043c\u0441\u043a\u043e\u0433\u043e",
+      "master": 68
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 69,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u043e\u043f\u043e\u0432\u0430",
+      "master": 69
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 70,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u043e\u043b\u0435\u0432\u0430\u044f",
+      "master": 70
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 71,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041d\u0430\u0440\u043e\u0434\u043d\u0430\u044f",
+      "master": 71
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 72,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0421\u0442\u0430\u0440\u043e\u043a\u043b\u0443\u0431\u043d\u0430\u044f",
+      "master": 72
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 73,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u0428\u043a\u0438\u043f\u0435\u0440\u043e\u0432\u0441\u043a\u0430\u044f",
+      "master": 73
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 74,
+    "fields": {
+      "language_code": "ru",
+      "name": "65 \u043b\u0435\u0442 \u043f\u043e\u0431\u0435\u0434\u044b",
+      "master": 74
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 75,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041e\u0431\u0449\u0438\u043d\u043d\u0430\u044f",
+      "master": 75
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 76,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041d\u0438\u0436\u043d\u0435\u0438\u043c\u0435\u0440\u0435\u0442\u0438\u043d\u0441\u043a\u0430\u044f",
+      "master": 76
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 77,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041e\u043b\u0438\u043c\u043f\u0438\u0439\u0441\u043a\u0438\u0439 \u043f\u043b\u044f\u0436",
+      "master": 77
+    }
+  },
+  {
+    "model": "core.availablestreettranslation",
+    "pk": 78,
+    "fields": {
+      "language_code": "ru",
+      "name": "\u041f\u043b\u044f\u0436",
+      "master": 78
+    }
+  }
+]

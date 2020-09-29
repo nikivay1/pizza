@@ -1,0 +1,15 @@
+*.pyc
+venv
+env
+.idea
+*.sqlite3
+/static
+media/logs
+/logs
+/media
+uwsgi_reload
+local_settings.py
+run
+node_modules
+package-lock.json
+celerybeat-schedule

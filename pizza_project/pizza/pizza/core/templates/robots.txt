@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.htm
+Host: http://pizzarally.ru
+Sitemap: http://pizzarally.ru/sitemap.xml

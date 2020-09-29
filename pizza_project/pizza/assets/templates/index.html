@@ -1,0 +1,20 @@
+<div class="btf-modal-inner full-width">
+    <div class="cart-body" ng-class="{unlogin: cart.user}">
+        <div class="btf-modal-close close-modal" ng-click="closeDialog()"><span ng-bind="'Close window' | translate"></span></div>
+        <div class="cart-path">
+            <ul>
+                <li><span ng-class="{'cp-active': currentStep == STATES.cart}" ng-bind="'Step 1. Cart' | translate"></span>
+                </li>
+                <li><span ng-class="{'cp-active': currentStep == STATES.order}" ng-bind="'Step 2. Order registration' | translate"></span>
+                </li>
+                <li><span ng-class="{'cp-active': currentStep == STATES.wait}" ng-bind="'Step 3. Finalize' | translate"></span>
+                </li>
+            </ul>
+        </div>
+        <div ng-show="loading" class="commerce">
+            <h5 align="center" ng-bind="'Cart loading' | translate"></h5>
+        </div>
+        <div ng-include="getCurrentTemplate()" ng-class="getCurrentClass()"></div>
+        <div ng-include="getAdditionCurrentTemplate()"></div>
+    </div>
+</div>

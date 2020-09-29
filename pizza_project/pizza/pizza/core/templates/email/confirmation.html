@@ -1,0 +1,8 @@
+{% load i18n %}
+<h1>{% trans "Hello" %}, {{ user }}</h1>
+
+{% blocktrans %}
+  <p>
+    Please confirm your email: <a href="{{ domain }}{{ url }}">{{ domain }}{{ url }}</a>
+  </p>
+{% endblocktrans %}

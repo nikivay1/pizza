@@ -1,0 +1,25 @@
+<div class="registration btf-modal-inner">
+  <div class="reg-title">
+    <img src="/static/img/ic-profile-black.png">
+    <span ng-bind="'Sign in form' | translate"></span>
+    <img class="reg-close" src="/static/img/ic-close-black.png" ng-click="closeDialog()">
+  </div>
+  <div class="reg-form">
+    <div class="reg-input">
+      <span>+</span>
+      <input class="phone" type="tel" required placeholder="{{ 'Phone number' | translate }}" ng-model="username">
+      <div class="reg-dat" ng-style="{background: (username && username.length > 10?'#3c8636':'#f44336')}"></div>
+    </div>
+    <div class="reg-input">
+      <input type="password" required placeholder="{{ 'Type password' | translate }}" ng-model="password">
+      <div class="reg-dat" ng-style="{background: (password && password.length > 1?'#3c8636':'#f44336')}"></div>
+    </div>
+    <div class="center-text"><button ng-style='{opacity: (password && password.length > 1 &&  username && username.length > 10?1:0.5)}' class="send-code" ng-click="signIn()"><span ng-bind="'Sign in' | translate"></span></button></div>
+    <div class="center-text"><span class="forget-password" ng-click="showRecoverDialog()" ng-bind="'Forgot password?' | translate"> </span></div>
+    <div class="reg-footer less-margin">
+      <div class="reg-sms">
+          {{ 'If You have not changed password of an account, the code is' | translate }}<br/>{{ 'a confirmation of the SMS, which was' | translate }}<br/>{{ 'sent during registration' | translate }}
+      </div>
+    </div>
+  </div>
+</div>

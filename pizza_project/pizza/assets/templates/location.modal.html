@@ -1,0 +1,17 @@
+<div class="registration location_form btf-modal-inner">
+  <div class="reg-title">
+    <img src="/static/img/icons/ic-marker.png"/>
+    <span ng-bind="'Your location' | translate"></span>
+  </div>
+  <form action="/set-location/" method="post">
+    <div class="reg-form">
+      <label class="btn_location" ng-hide="locations">
+        <span ng-bind="'Loading' | translate"></span>
+      </label>
+      <label ng-hide="loading" class="btn_location" ng-repeat="location in locations track by $index">
+        <input type="radio" ng-model="selectedLocation" ng-value="location.id" name="location" onclick="$(this).parents('form').submit()">
+        <span>{{ location.name }}</span>
+      </label>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,316 @@
+{% load i18n static %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+
+<!DOCTYPE html>
+<html lang="ru" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Где поесть? Заказать пиццу на дом в Pizza Rally!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="Z8jt2Z_U0lFhRYaMVg-T9jUKnxc7vwD6XMRH40qXcRw" />
+
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+    <link rel="shortcut icon" href="/static/img/favicon.png" type="image/png">
+    
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src="/jsi18n/"></script>
+    <script type="application/javascript">
+      var globalSettings = {{ site_config.to_json|safe }},
+          current_language = '{{ LANGUAGE_CODE }}';
+    </script>
+    <meta name="description" content="Не знаешь где поесть? Можешь заказать пиццу с доставкой на дом Адлер, Красная поляна, Роза хутор, Горки город.">
+    <script type='application/ld+json'>{"@context":"http://www.schema.org","@type":"Organization","name":"Pizza Rally","url":"http://pizzarally.ru","description":"Не знаешь где поесть? Можешь заказать пиццу с доставкой на дом Адлер, Красная поляна, Роза хутор, Горки город.","logo":"http://pizzarally.ru/static/img/logo.png","address":{"@type":"PostalAddress","addressLocality":"Сочи","addressCountry":"Россия"},"telephone":"+7 (862) 258-33-88","email":"gelatoamato@gmail.com"}</script>
+    <meta property="og:url" content="http://pizzarally.ru">
+    <meta property="og:title" content="Где поесть? Заказать пиццу на дом в Pizza Rally!">
+    <meta property="og:description" content="Не знаешь где поесть? Можешь заказать пиццу с доставкой на дом Адлер, Красная поляна, Роза хутор, Горки город.">
+    {% block extra_head %}{% endblock extra_head %}
+</head>
+<body class="home-page" ng-controller="baseCtrl">
+<div id="mobile_overlay"></div>
+<div id="mobile_menu">
+  <div class="mobile_menu_wrapper">
+    <div class="mobile_menu_top">
+      <a class="close_menu"><img src="{% static 'img/mobile/ic-close-red.png' %}" alt="Заказать пиццу Красная поляна, Адлер"></a>
+      <a class="mobile_profile" ng-click="profileClickHandler()"><img src="{% static 'img/mobile/ic-signup.png' %}" alt="Заказать пиццу Адлер, Олимпийский парк"></a>
+    </div>
+    <ul class="mobile_menu">
+      <li>
+       <a href="/"><img src="{% static 'img/mobile/ic-home.png' %}" alt="Заказать пиццу"><span>Главная</span></a>
+     </li>
+     <li>
+       <a href="/#!?category=1#product-list"><img src="{% static 'img/mobile/ic-pizza.png' %}" alt="Заказать пиццу в Адлере или Красной поляне"><span>Пиццы</span></a>
+     </li>
+     <!--<li>
+       <a href="/#!?category=2#product-list"><img src="{% static 'img/mobile/ic-vegan.png' %}" alt="Заказать пиццу"><span>Салаты</span></a>
+     </li>-->
+     <li>
+       <a href="/#!?category=3#product-list"><img src="{% static 'img/mobile/ic-drinks.png' %}" alt="Заказать пиццу с доставкой"><span>Напитки</span></a>
+     </li>
+     <!--<li>
+       <a href="/#!?category=4#product-list"><img src="{% static 'img/mobile/ic-icecream.png' %}" alt="Заказать еду"><span>Мороженое/Десерты</span></a>
+     </li>-->
+     <li>
+       <a class="color-green" href="/actions"><img src="{% static 'img/mobile/ic-sale.png' %}" alt="Заказать еду в Адлере и Красной поляне"><span>{% trans "Actions" %}</span></a>
+     </li>
+     <li>
+       <a class="color-green" href="javascript: void(0);" ng-click="openContactsDialog()"><img src="{% static 'img/mobile/ic-map.png' %}" alt="Заказать пиццу в Адлере"><span>{% trans "Contacts" %}</span></a>
+     </li>
+     <li>
+       <a class="color-green" href="javascript: void(0);" ng-click="openDeliveryDialog()"><img src="{% static 'img/mobile/ic-delivery.png' %}" alt="Заказать пиццу и еду в Адлере или Красной поляне"><span>{% trans "Delivery" %}</span></a>
+     </li>
+   </ul>
+   <div class="mobile_menu_bottom">
+     <img src="{% static 'img/mobile/mobile_menu_bg.jpg' %}" alt="Заказать пиццу и другую еду в Адлере">
+     <div class="mobile_menu_title">PIZZA RALLY</div>
+   </div>
+ </div>
+</div>
+<header>
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header__location">{{ site_config.address }}</div>
+            <div class="top-header__left">
+                <a href="tel:{{ site_config.phone }}" class="top-header__phone">{{ site_config.phone }}</a>
+                <div class="top-header__lang change_lang">
+                  <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                      <input name="next" type="hidden" value="{{ redirect_to }}" />
+                      <div class="myselect">
+                        <label>
+                            <select name="language" class="select">
+                            {% for language in languages %}
+                              <option value="{{ language.code }}" {% if LANGUAGE_CODE == language.code %}selected{% endif %}>
+                                {{ language.name_local }}
+                              </option>
+                            {% endfor %}
+                            </select>
+                            <span>{{ LANGUAGE_CODE }}</span>
+                            <img class="top-header__expand" src="{% static 'img/icons/ic_expand_more_black.png' %}" alt="Пицца">
+                        </label>
+                        <div class="myoptions">
+                            {% for language in languages %}
+                            <span data-value="{{ language.code }}">{{ language.name_local }}</span>
+                            {% endfor %}
+                        </div>
+                      </div>
+                  </form>
+                </div>
+                {% if locations.count > 1 %}
+                  <div class="top-header__lang change_lang">
+                      <form action="{% url 'set_location' %}" method="post">{% csrf_token %}
+                          <input name="next" type="hidden" value="{{ redirect_to }}" />
+                          <div class="myselect">
+                            <label>
+                                <select name="location" class="select">
+                                {% for location in locations %}
+                                  <option value="{{ location.id }}" {% if location.id == current_location.id %}selected{% endif %}>
+                                    {{ location.name }}
+                                  </option>
+                                {% endfor %}
+                                </select>
+                                <span>{{ current_location.name }}</span>
+                                <img class="top-header__expand" src="{% static 'img/icons/ic_expand_more_black.png' %}" alt="Пицца в Адлере, Красной поляне">
+                            </label>
+                            <div class="myoptions">
+                                {% for location in locations %}
+                                  <span data-value="{{ location.id }}">{{ location.name }}</span>
+                                {% endfor %}
+                            </div>
+                          </div>
+                      </form>
+                    </div>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="container">
+            <div id="menu_toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="main-header__logo">
+                <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="Заказать пиццу с доставкой на дом Адлер, Красная поляна и больше не потребуется думать где посеть." class="main-header__logo-img"><span class="main-header__logo-name">{{ site_config.title }}</span></a>
+            </div>
+            <div class="main-header__left">
+                <ul class="main-header__menu">
+                    {%  for category in category_list %}
+                      {% if category.show_on_top_menu %}
+                        <li><a href="{% url 'index' %}#!?category={{ category.id }}#product-list">{{ category.name }}</a></li>
+                      {% endif %}
+                    {% endfor %}
+                    <li><a href="{% url 'actions' %}">{% trans "Actions" %}</a></li>
+                </ul>
+                <div class="main-header__profile">
+                    <a class="main-header__profile-link" ng-click="profileClickHandler()">
+                      <img src="{% static 'img/icons/ic-signup.png' %}" alt="Задумлся где поесть в Адлере? Пицца с доставкой на дом" class="main-header__profile-icon">
+                    </a>
+                    <a class="main-header__profile-link" href="javascript: void(0);" ng-click="openCartDialog()">
+                      <img src="{% static 'img/icons/ic-shopcart.png' %}" alt="Задумлся где поесть в Красной поляне? Пицца с доставкой на дом" class="main-header__profile-icon">
+                      <span class="count_items" ng-show="cart.items.length > 0" ng-bind="getTotalCartCount()"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% block content %}{% endblock %}
+
+<footer>
+	<div class="footer__main">
+		<div class="container">
+			<div class="footer__logo">
+				<img src="{% static 'img/logo.png' %}" class="footer__logo-img" alt="Заказать пиццу Красная Поляна, Адлер, Олимпийский парк, Роза хутор">
+                <a href="{% url 'index' %}">{{ site_config.title }}</a>
+			</div>
+			<div class="footer__menu">
+				<ul class="main-footer__menu">
+                    {%  for category in category_list %}
+                      {% if category.show_on_bottom_menu %}
+                        <li><a href="{% url 'index' %}#!?category={{ category.id }}#product-list">{{ category.name }}</a></li>
+                      {% endif %}
+                    {% endfor %}
+                    <li><a href="{% url 'actions' %}">{% trans "Actions" %}</a></li>
+                    <li><a href="javascript: void(0);" ng-click="openContactsDialog()">{% trans "Contacts" %}</a></li>
+                    <li><a href="javascript: void(0);" ng-click="openDeliveryDialog()">{% trans "Delivery" %}</a></li>
+                </ul>
+			</div>
+      <div class="mobile_footer_menu mobile-visible">
+        {% if cart.user %}
+          <a ng-click="profileClickHandler()"><img src="/static/img/mobile/ic-profile.png" alt="Заказать пиццу Эсто Садок, Адлер, Олимпийский парк, Красная поляна" class="menu_icon">{% trans "My profile" %}<img src="/static/img/mobile/ic-right-grey.png" alt="Заказать пиццу Эсто Садок, Адлер, Олимпийский парк, Красная поляна" class="arrow"></a>
+        {% else %}
+          <a ng-click="profileClickHandler()"><img src="/static/img/mobile/ic-signup-grey.png" alt="Заказать пиццу Горки город, Адлер, Красная поляна" class="menu_icon">{% trans "Account registration" %}<img src="/static/img/mobile/ic-right-grey.png" alt="Заказать пиццу Горки город, Адлер, Красная поляна" class="arrow"></a>
+        {% endif %}
+        <a ng-click="openContactsDialog()"><img src="/static/img/mobile/ic-map-grey.png" alt="Пицца Красная поляна, Адлер, Олимпийский парк, Эсто садок" class="menu_icon">{% trans "Contacts" %}<img src="/static/img/mobile/ic-right-grey.png" alt="Пицца Красная поляна, Адлер, Олимпийский парк, Эсто садок" class="arrow"></a>
+        <a ng-click="openDeliveryDialog()"><img src="/static/img/mobile/ic-delivery-grey.png" alt="Доставка пиццы Красная поляна, Адлер, Эсто садок" class="menu_icon">{% trans "Delivery" %}<img src="/static/img/mobile/ic-right-grey.png" alt="Доставка пиццы Красная поляна, Адлер, Эсто садок" class="arrow"></a>
+      </div>
+			<div class="footer__social">
+				<ul class="main-footer__menu">
+          {% for link in social_links %}
+              <li><a href="{{ link.url }}"><img src="{{ link.icon.url }}" alt="{{ link.icon_alt }}"></a></li>
+          {% endfor %}
+        </ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom">
+    <div class="footer__copyright">© Pizza Rally 2017. {% trans "All rights reserved" %}</div>
+    <div class="footer__lang change_lang">
+      <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}" />
+        <div class="myselect">
+          <label>
+            <select name="language" class="select">
+              {% for language in languages %}
+              <option value="{{ language.code }}" {% if LANGUAGE_CODE == language.code %}selected{% endif %}>{{ language.name_local }}</option>
+              {% endfor %}
+            </select>
+            {% if LANGUAGE_CODE == "en" %}
+            <img src="{% static 'img/icons/ic-flag-en.png' %}" alt="Delivery pizza Red Medow" class="footer__flag">
+            {% else %}
+            <img src="{% static 'img/icons/ic-flag-ru.png' %}" alt="Заказать еду Красноя Поляна, Адлер, Олимпийский парк" class="footer__flag">
+            {% endif %}
+            <span>{{ LANGUAGE_CODE }}</span>
+            <img class="top-header__expand top-header__expand--main"  src="{% static 'img/icons/ic_expand_more_black.png' %}" alt="Заказать еду">
+           </label>
+          <div class="myoptions">
+            {% for language in languages %}
+            <span data-value="{{ language.code }}">{{ language.name_local }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </form>
+      {% if locations.count > 1 %}
+        <form action="{% url 'set_location' %}" method="post">{% csrf_token %}
+          <input name="next" type="hidden" value="{{ redirect_to }}" />
+          <div class="myselect">
+            <label>
+                <select name="location" class="select">
+                {% for location in locations %}
+                  <option value="{{ location.id }}" {% if location.id == current_location.id %}selected{% endif %}>
+                    {{ location.name }}
+                  </option>
+                {% endfor %}
+                </select>
+                <span>{{ current_location.name }}</span>
+                <img class="top-header__expand" src="{% static 'img/icons/ic_expand_more_black.png' %}" alt="Пицца">
+            </label>
+            <div class="myoptions">
+                {% for location in locations %}
+                  <span data-value="{{ location.id }}">{{ location.name }}</span>
+                {% endfor %}
+            </div>
+          </div>
+        </form>
+      {% endif %}
+    </div>
+    <div class="chekhov"><a href="http://chekhovstudio.ru" target="_blank"><img src="/static/img/chekhov.png" alt="Разработка сайта Сочи"></a></div>
+  </div>
+</footer>
+
+
+  <script>
+      $(function () {
+          $(".product__buy-switch").click(function () {
+              if (!$(this).hasClass('button--redcolor')) {
+                  $('.product__buy-switch[data-id="' + $(this).data('id') + '"]').removeClass('button--redcolor').addClass('button--greycolor');
+
+                  $(this).removeClass('button--greycolor').addClass('button--redcolor');
+
+              }
+          });
+          $(".change_lang .myselect").myselect();
+          $(".change_lang .select").change(function() {
+              $(this).closest("form").submit();
+          });
+          mobile_menu_init();
+      });
+      function mobile_menu_init() {
+        var menu = $("#mobile_menu");
+        var toggle = $("#menu_toggle");
+        toggle.click(function() {
+          $("body").toggleClass("mobile-menu-visible");
+        });
+        menu.find(".close_menu").add($("#mobile_overlay")).click(function() {
+          $("body").removeClass("mobile-menu-visible");
+        });
+        var links = menu.find("a");
+        links.click(function() {
+          $("body").removeClass("mobile-menu-visible");
+          var parent = $(this).parent("li");
+          if (!parent.length) return;
+          links.parent("li").removeClass("active");
+          parent.addClass("active");
+        });
+      }
+      !function(t){jQuery.fn.myselect=function(){var e=function(){var e=t(this).find(".select").first(),i=e.next("span"),n=t(this).children(".myoptions"),s=n.children();s.mousedown(function(){var n=t(this).attr("data-value");e.val()!=n&&(e.val(n),i.text(n),e.trigger("change"))}),e.focus(function(){n.addClass("visible")}).blur(function(){n.removeClass("visible")}).change(function(){i.text(t(this).val()),n.removeClass("visible")})};this.each(e)}}(jQuery);
+  </script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type=text/javascript></script>
+  <script type=text/javascript>
+    ymaps.ready(function(){
+        if (globalSettings.y_map_coord.length === 2) {
+            var placemark = new ymaps.Placemark(globalSettings.y_map_coord, {}, {
+                preset: "islands#redDotIcon",
+                iconColor: "#e3000f"
+            });
+            var map = new ymaps.Map("map", {
+                center: [globalSettings.y_map_coord[0]-0.005, globalSettings.y_map_coord[1].toFixed(3)],
+                zoom: 16,
+                controls: []
+            });
+            map.geoObjects.add(placemark);
+        }
+      });
+  </script>
+
+  {% if metric_include %}
+    {{ site_config.metric_code|safe }}
+  {% endif %}
+</body>
+
+</html>

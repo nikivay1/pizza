@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block extra_head %}
+  <script src="{% static "js/custom.js" %}" type="application/javascript"></script>
+  <link rel="stylesheet" href="{% static 'css/angucomplete.css' %}"/>
+  <script src="{% static "app/app.js" %}" type="application/javascript"></script>
+  <meta http-equiv="refresh" content="20">
+{% endblock extra_head %}
+
+{% block content %}
+  <div class="cart-body" ng-controller="orderCtrl">
+    <div class="cart-path">
+      <ul>
+        <li><span>{% trans "Step 1. Cart" %}</span></li>
+        <li><span>{% trans "Step 2. Order registration" %}</span></li>
+        <li><span class="cp-active">{% trans "Step 3. Finalize" %}</span></li>
+      </ul>
+    </div>
+    <div class="cart-success">
+    <input type="hidden" value="{{ object.seconds }}" id="seconds"/>
+      <h3>Ваш заказ #<span>{{ object.number }}</span> {{ object.get_status_display }}!</h3>
+
+      {% if object.status == 'WAIT' or object.status == 'CONFIRMED'%}
+        {% include 'google-transaction.html' %}
+      {% endif %}
+
+      {% if object.has_errors %}
+        <div style="text-align: center">
+          {% if object.payment_type == 'ONLINE' and object.is_wait %}
+            <p>{% trans "Please wait, payment status loading..." %}.<br/></p>
+          {% else %}
+            {% with pay_link=object.get_pay_link %}
+              <p>{% trans "We have an error on your payment" %}.<br/></p>
+              <p>{% trans "Contact with us please" %}: {{ site_config.phone }}</p>
+              <p>
+                {% if pay_link %}
+                  <a href="{{ pay_link }}">{% trans "or follow link to pay" %}.</a>
+                {% else %}
+                  <a href="javascript:void(0);" ng-click="getPaymentLink({{ object.id }})">
+                    {% trans "or follow link to pay" %}.
+                  </a>
+                {% endif %}
+              </p>
+            {% endwith %}
+          {% endif %}
+        </div>
+      {% elif not object.is_ready %}
+        <div class="cs-timer">–<span ng-bind="getDisplayTimer()">00:00</span>–</div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock content %}

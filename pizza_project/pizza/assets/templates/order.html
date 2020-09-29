@@ -1,0 +1,127 @@
+<div class="sign-up" ng-hide="cart.user">
+    <h3 ng-bind="'Account registration' | translate"></h3>
+    <div class="su-container">
+        <div class="su-button">
+            <a href="" class="button button-orange" ng-click="openSignUpDialog()" ng-bind="'Go to Sign up' | translate"></a>
+            <span ng-bind="'Registration will take no more than a minute' | translate"></span>
+        </div>
+    </div>
+</div>
+<div class="without-sign">
+    <h3 ng-hide="cart.user" ng-bind="'Without Sign Up' | translate"></h3>
+    <form>
+        <div class="ws-input"><input type="text" placeholder="{{ 'What is your name' | translate }}?" id="name"
+                                     required
+                                     ng-model="cart.order.address.username"/><label for="name"></label>
+        </div>
+        <div class="ws-input">
+          <span>+</span>
+          <input type="text" placeholder="{{ 'Phone number' | translate }}" id="phone"
+                                     ng-pattern="phonePattern"
+                                     required
+                                     ng-model="cart.order.address.phone"/><label
+                for="phone"></label></div>
+        <div class="variations">
+            <ul>
+                <li ng-click="setDeliveryType('DELIVERY')">
+                    <span ng-class="{active: cart.order.address.delivery_type == 'DELIVERY'}"
+                          class="custom-checkbox" ng-bind="('Delivery' | translate).toUpperCase()"></span></li>
+                <li ng-click="setDeliveryType('PICKUP')">
+                    <span ng-class="{active: cart.order.address.delivery_type == 'PICKUP'}"
+                          class="custom-checkbox" ng-bind="('Pickup' | translate).toUpperCase()"></span></li>
+            </ul>
+        </div>
+
+        <div class="ws-check" ng-show="cart.order.address.delivery_type == 'PICKUP'">
+            <a href="https://yandex.ru/maps/?um=constructor%3A1f8f42d3baa08e3428b3ee719b22a892a7f8a0b129a0c18c86851c83fe3240eb&source=constructorLink"
+               target="_blank" class="button button-check" ng-bind="'Sochi, Adler, romashek 4A' | translate"></a>
+        </div>
+
+        <div class="variations" ng-show="(cart.order.address.delivery_type == 'DELIVERY') && cart.arena_allowed">
+            <ul>
+                <li ng-click="setAddressType('ADDRESS')">
+                    <span ng-class="{active: cart.order.address.address_type == 'ADDRESS'}"
+                          class="custom-checkbox"
+                          ng-bind="'Address' | translate"></span>
+                </li>
+                <li ng-click="setAddressType('ARENA')">
+                    <span ng-class="{active: cart.order.address.address_type == 'ARENA'}"
+                          class="custom-checkbox"
+                          ng-bind="'Arena' | translate"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="ws-input" ng-show="isVisibleArena()">
+            <div class="styled-select slate">
+                <!--input type="text" ng-model="cart.order.address.arena" placeholder="Выберите стадион"-->
+                <select onChange="changeColor(this)"
+                        ng-model="cart.order.address.arena"
+                        ng-options="item as item for item in stadions"
+                        placeholder="{{ 'Select the arena' | translate }}"></select>
+            </div>
+        </div>
+        <div class="ws-input ws-sep" ng-show="isVisibleArena()">
+            <div class="styled-select slate separate separate-t">
+                <select onChange="changeColor(this)"
+                        ng-options="item as item for item in numbers"
+                        ng-model="cart.order.address.tribune"
+                        placeholder="{{ 'Tribune' | translate }}"></select>
+            </div>
+            <div class="styled-select slate separate separate-r">
+                <select onChange="changeColor(this)"
+                        ng-model="cart.order.address.col_number"
+                        ng-options="item as item for item in numbers"
+                        placeholder="{{ 'Row number' | translate }}">
+                </select>
+            </div>
+            <div class="styled-select slate separate separate-m">
+                <select onChange="changeColor(this)"
+                        ng-model="cart.order.address.row_number"
+                        ng-options="item as item for item in numbers"
+                        placeholder="{{ 'Seat number' | translate }}"></select>
+            </div>
+        </div>
+
+        <div class="street-home">
+            <div class="ws-input street" ng-show="isVisibleAddress()">
+                <!--input type="text" placeholder="Улица" id="street" ng-model="cart.order.address.street"/><label
+                    for="street"></label-->
+                <angucomplete id="members"
+                              required
+                              placeholder="{{ 'Street' | translate }}"
+                              pause="0"
+                              minlength="0"
+                              dataField="results"
+                              selectedobject="cart.order.address.street"
+                              url="/api/core/streets?name="
+                              titlefield="name"
+                              inputclass="form-control form-control-small"/>
+            </div>
+
+            <div class="ws-input home" ng-show="isVisibleAddress()">
+                <input type="text" placeholder="{{ 'House' | translate }}" id="home" ng-model="cart.order.address.house" required/><label
+                    for="home"></label>
+            </div>
+        </div>
+
+        <div class="ws-input" ng-show="isVisibleAddress()">
+            <input type="text" placeholder="{{ 'Landmark' | translate }}" id="orient" ng-model="cart.order.address.landmark"/>
+        </div>
+
+        <div class="ws-input">
+            <input type="text" placeholder="{{ 'Comment' | translate }}" id="comment" ng-model="cart.order.address.comment"/>
+        </div>
+
+        <div class="variations">
+            <ul>
+                <li ng-click="setPaymentType('ON_DELIVERY')">
+                    <span ng-class="{active: cart.order.payment_type == 'ON_DELIVERY'}" class="custom-checkbox" ng-bind="'Cash' | translate"></span>
+                </li>
+                <li ng-click="setPaymentType('ONLINE')">
+                    <span ng-class="{active: cart.order.payment_type == 'ONLINE'}" class="custom-checkbox" ng-bind="'Card' | translate"></span>
+                </li>
+            </ul>
+        </div>
+        <p style="font-size:9px;">Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard SecureCode для проведения платежа также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa Int. и MasterCard Europe Sprl.</p>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+<div class="btf-modal-inner full-width">
+  <div class="btf-modal-header container">
+    <div class="row_table" style="margin-bottom: 1rem">
+      <div>
+        <img src="/static/img/scooter.png"><span class="modal-title" ng-bind="'Delivery' | translate"></span>
+      </div>
+      <div class="right-text">
+        <div class="btf-modal-close" ng-click="closeDialog()"><span ng-bind="'Close window' | translate"></span></div>
+      </div>
+    </div>
+    <div class="delivery-timework"><span ng-bind="'Time work store' | translate"></span>:&nbsp;<span ng-bind="config.schedule"></span></div>
+    <div class="delivery-text">
+      <span ng-bind="'Orders are accepted online and by phone' | translate"></span>&nbsp;<a href="tel:{{ config.phone }}"><span ng-bind="config.phone"></span></a><br>
+      <span ng-bind="'Payment by cash or Bank transfer' | translate"></span>.<br>
+
+      <span ng-bind="'Our pizzeria has a certain delivery area. You can see below' | translate"></span>.<br>
+      <span ng-if="config.min_order_sum > 0">{{ 'Min order price is' | translate }}</span>:&nbsp;<span ng-bind="config.min_order_sum.toString() + ('rub'|translate)"></span>.<br>
+    </div>
+  </div>
+  <iframe ng-if="config.y_map_area" style="width:100%" ng-src="{{ trustSrc(config.y_map_area) }}" width="100%" height="600" frameborder="0"></iframe>
+</div>

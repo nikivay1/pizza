@@ -1,0 +1,29 @@
+<div class="product" ng-repeat="product in products">
+
+    <div class="product__label" ng-style="{'background-color': product.action.color}" ng-show="product.action">
+        <img ng-src="{{ product.action.icon }}" alt="" class="product__label-icon"> {{ product.action.name }}
+    </div>
+
+    <div class="product__gradient"></div>
+
+    <img ng-src="{{ product.images[0] }}" alt="" class="product__image">
+    <div class="product__main-info">
+        <div class="product__title" ng-bind="product.name "></div>
+        <div class="product__price">{{ getActivePrice(product).price }} {{ 'rub' | translate }}.
+            <span class="product__price--old" ng-if="product.old_price">{{ product.old_price }} {{ 'rub' | translate }}.</span>
+        </div>
+        <img src="/static/img/icons/ic-favorite-unactive.png" alt="" class="product__favorite">
+    </div>
+    <div class="product__ingredients" ng-if="product.ingredients">
+        <img ng-src="{{ product.category_icon }}" alt="" class="product__ingredients-icon"> {{ product.ingredients }}
+    </div>
+    <div class="product__buy-block">
+        <button ng-repeat="item in product.prices"
+                data-id='{{ item.price }}'
+                ng-click="setActivePrice(product, item)"
+                ng-class="{'button--redcolor': item.id == product.activePrice.id}"
+                ng-style="{visibility: (item.name?'visible':'hidden')}"
+                class="button product__buy-switch" ng-bind="item.name"></button>
+        <button class="button button--greencolor  product__buy-button" ng-click="addProductToCart(product.activePrice.id)" ng-bind="'Add to cart' | translate"></button>
+    </div>
+</div>

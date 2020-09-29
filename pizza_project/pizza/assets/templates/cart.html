@@ -1,0 +1,61 @@
+<div class="commerce-row" ng-repeat="item in cart.items">
+    <div class="cr-main">
+        <div class="cr-status"></div>
+        <div class="cr-img"><img ng-src="{{ item.product_url }}"/></div>
+        <div class="cr-name"><span>{{ item.product_name }}</span><span class="cr-size">{{ item.price.name }}</span>
+        </div>
+    </div>
+    <div class="cr-change">
+        <div class="cr-count">
+            <a href="javascript:void(0);" class="cr-minus" ng-click="updateItemAmount(item, -1)">-</a>
+            <span ng-bind="item.amount"></span>
+            <a href="javascript:void(0);" class="cr-plus" ng-click="updateItemAmount(item, 1)">+</a>
+        </div>
+        <div class="cr-cost"><span>{{ getItemPrice(item) }} {{ 'rub' | translate }}</span></div>
+        <div class="cr-delete"><a href="javascript: void(0);" ng-click="removeProductFromCart(item)"><img
+                src="/static/img/cart/icons/trash.png"/></a></div>
+    </div>
+</div>
+<div ng-if="cart.items.length == 0">
+    <h5 align="center" ng-bind="'Cart is empty' | translate"></h5>
+</div>
+<div class="commerce-pane" ng-if="cart.items.length > 0">
+    <!--<div class="promo-code"><input type="text" placeholder="Введите промокод..."><a href="" class="promo-button"></a></div>-->
+    <div class="next-step mobile-hidden"><span class="ns-green" ng-bind="('For payment' | translate) + ':'"></span>
+        <div class="ns-button button button--greencolor"><span>{{ getTotalPrice() }} {{ 'rub' | translate }}</span></div>
+        <div class="ns-button button button--redcolor ns-next" ng-click="createOrder()"><span ng-bind="'step 2. Order registration' | translate"></span></div>
+    </div>
+    <div class="mobile-result mobile-visible">
+        {{ 'Total' | translate }}: {{ getTotalPrice() }} <span>{{ 'rub' | translate }}.</span>
+    </div>
+    <div class="mobile-next-step mobile-visible">
+        <div ng-hide="cart.user" class="link_block"><a class="reg_link" ng-click="openSignUpDialog()"></a></div>
+        <div><a class="next_link" ng-click="createOrder()"><span ng-bind="'Next' | translate"></span></a></div>
+    </div>
+</div>
+
+<div class="myslider commerce-also" data-type="carousel" slider-specials specials="cart.specials" add-to-cart="addProductToCart(priceId)"></div>
+
+<script type="text/ng-template" id="slider_specials.html">
+    <div class="ca-left sl_prev"></div>
+    <div class="ca-right sl_next"></div>
+    <div class="slides_wrap">
+        <div class="slides">
+            <div class="ca-row" ng-repeat="item in results">
+                <div class="ca-img"><img ng-src="{{ item.icon }}"/></div>
+                <div class="ca-des">
+                    <span class="ca-title" ng-bind="item.name"></span>
+                    <span class="ca-price" ng-bind="item.price.price + ' ' + ('rub' | translate)"></span>
+                </div>
+                <div class="ca-amount">
+                    <span ng-bind="item.price.short_name"></span>
+                    <a href="javascript: void(0);" ng-click="addToCart({priceId: item.price.id})"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script>
+  !function(e){jQuery.fn.slider=function(t){var i={type:"slider",infinite:!1,autoheight:!1,autoplay:!1,half_vis:!1,effect:"slide",interval:3e3,speed:300},a=function(){function a(){switch(k){case 0:y!=W?m.removeClass("no-active"):m.addClass("no-active"),q.addClass("no-active");break;case y-W:q.removeClass("no-active"),m.addClass("no-active");break;default:m.removeClass("no-active"),q.removeClass("no-active")}}function s(){x=!0,I.infinite?"fade"==I.effect&&(k==y?k=0:k<0&&(k=y-1)):a(),g.removeClass("slide-active"),g.eq(k).addClass("slide-active"),!I.infinite||"slide"!=I.effect||k!=2*b&&0!==k||g.eq(b).addClass("slide-active"),"slide"==I.effect&&(w=g.eq(k).position().left,p.css("left","-"+w+"px"),I.half_vis&&"slider"==I.type&&c()),setTimeout(function(){I.infinite&&"slide"==I.effect&&(k!=2*b&&0!==k||(k=b,p.css("transition","none"),w=g.eq(k).position().left,p.css("left","-"+w+"px"),setTimeout(function(){p.css("transition","all "+I.speed+"ms ease-out")},20))),x=!1},I.speed),I.autoheight&&"slider"==I.type&&g.eq(k).WaitSliderImages(function(){p.css("height",g.eq(k).css("height"))})}function n(){f=setInterval(function(){k++,s()},I.interval)}function c(){g.off("click"),k!=y&&g.eq(k+1).on("click",function(){!1===x&&(k++,s())})}var f,l,o,r,d,u,h,v,p=e(this).find(".slides"),g=p.children(),y=g.length,m=e(this).find(".sl_next"),q=e(this).find(".sl_prev"),C=e(this),I=e.extend({},i,t),k=0,w=0,W=1,x=!1;switch("true"===C.attr("data-autoheight")&&(I.autoheight=!0),"true"===C.attr("data-infinite")&&(I.infinite=!0,"true"===C.attr("data-autoplay")&&(I.autoplay=!0,C.attr("data-interval")&&!isNaN(C.attr("data-interval"))&&(I.interval=parseInt(C.attr("data-interval"))))),C.attr("data-speed")&&!isNaN(C.attr("data-speed"))&&(I.speed=parseInt(C.attr("data-speed"))),C.attr("data-type")){case"carousel":I.type="carousel";break;default:I.type=i.type}switch(C.attr("data-effect")){case"fade":I.effect="fade";break;default:I.effect=i.effect}if("carousel"!=I.type||I.infinite||(W=Math.ceil(p.outerWidth()/g.eq(0).outerWidth(!0))),"true"===C.attr("data-half-vis")&&(I.half_vis=!0),I.infinite){if("slide"==I.effect){var T=p.html(),b=y;p.prepend(T).append(T),g=p.children(),k=b,y=g.length,p.css({left:"-"+g.eq(k).position().left+"px"})}}else q.addClass("no-active"),y<=W&&m.addClass("no-active");"slide"==I.effect&&setTimeout(function(){p.css("transition","all "+I.speed+"ms ease-out")},20),g.eq(k).addClass("slide-active"),"slide"==I.effect&&e(window).resize(function(){w=g.eq(k).position().left,p.css({left:"-"+w+"px"}),"carousel"!=I.type||I.infinite||(W=Math.round(p.outerWidth()/g.eq(0).outerWidth(!0)),y-W<k&&(k=y-W),s())}),I.autoheight&&"slider"==I.type&&(g.eq(0).WaitSliderImages(function(){p.css("height",g.eq(0).css("height"))}),C.WaitSliderImages(function(){e(window).resize(function(){p.css("height",g.eq(k).css("height"))})})),p.on("touchstart",function(e){e=e.originalEvent,I.autoplay||1!=e.touches.length||r||x||("slide"==I.effect&&p.css("transition","none"),l=!0,o=e.changedTouches[0],d=o.pageX,u=o.pageY,v=parseInt(p.css("left")))}),p.on("touchmove",function(e){if(e=e.originalEvent,r||l){var t,i=(o=e.changedTouches[0]).pageX,a=o.pageY;if(l){if(1!=e.changedTouches.length)return;Math.abs(d-i)>=Math.abs(u-a)&&(e.preventDefault(),r=!0),l=!1}r&&(h=d-i,I.infinite||(0===k&&h<0||k===y-W&&h>0)&&(h/=5),"slide"==I.effect&&(t=v-h,p.css({left:t+"px"})))}}),p.on("touchend",function(e){1==(e=e.originalEvent).changedTouches.length&&r&&(e.preventDefault(),I.infinite&&h>50||k!==y-W&&h>50?k++:(I.infinite&&h>50||0!==k&&h<-50)&&k--,"slide"==I.effect&&p.css("transition","all "+I.speed+"ms ease-out"),s(),r=!1)}),q.click(function(){(k>0||"fade"==I.effect&&0===k)&&!e(this).hasClass("no-active")&&!1===x&&(k--,s())}),m.click(function(){(k<y-W||"fade"==I.effect&&k===y-W)&&!e(this).hasClass("no-active")&&!1===x&&(k++,s())}),I.autoplay&&I.infinite&&(n(),C.hover(function(){clearInterval(f)},n)),I.half_vis&&"slider"==I.type&&c()};this.each(a)}}(jQuery),function(e){jQuery.fn.WaitSliderImages=function(){var t=arguments[0],i=function(){var i=e(this).find("img"),a=i.length;if(0===a)return t.call(),!0;var s=0;return i.each(function(){var i=new Image;i.onload=function(){++s==a&&t.call()},i.src=e(this).attr("src")}),!0};this.each(i)}}(jQuery);
+</script>

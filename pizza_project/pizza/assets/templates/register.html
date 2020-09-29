@@ -1,0 +1,41 @@
+<div class="registration btf-modal-inner">
+  <div class="reg-title">
+    <img src="/static/img/ic-signup.png"/>
+    <span ng-bind="'User registration' | translate"></span>
+    <img class="reg-close" src="/static/img/ic-close-black.png" ng-click="closeDialog()">
+  </div>
+  <div class="reg-form" ng-show="factor == 1">
+    <div class="reg-input">
+      <input type="text" required placeholder="{{ 'What is your name' | translate }}?" ng-model="firstName">
+      <div class="reg-dat" ng-style="{background: (firstName && firstName.length > 2?'#3c8636':'#f44336')}"></div>
+    </div>
+    <div class="reg-input">
+      <span>+</span>
+      <input class="phone" required type="tel" placeholder="{{ 'Phone number' | translate }}" ng-model="phone">
+      <div class="reg-dat" ng-style="{background: (phone && phone.length > 10?'#3c8636':'#f44336')}"></div>
+    </div>
+    <div class="center-text">
+      <button ng-style='{opacity: (firstName && phone && phone.length > 10?1:0.5)}' class="send-code" ng-click="signUp1fa()"><span ng-bind="'Send code' | translate"></span></button>
+      <div class="reg-desc">
+        <span ng-bind="'By clicking the button above, you consent to the processing' | translate"></span> <a href="/policy" ng-bind="'of personal data' | translate"></a>.</div>
+    </div>
+    <div class="reg-footer">
+      <img src="/static/img/ic-profile-grey.png"></img><br>
+      <span class="reg-question" ng-bind="'Are you have an account?' | translate"></span>
+      <div class="reg-enter" ng-click="openSignInDialog()" ng-bind="'Sign in form' | translate"></div>
+    </div>
+  </div>
+  <div class="reg-form" ng-show="factor == 2">
+    <div class="reg-place-code center-text" ng-bind="'Enter code from SMS message below' | translate"></div>
+    <div class="reg-code center-text">
+      <input type="text" required maxlength="6" placeholder="* * * * * *" ng-model="smsCode">
+    </div>
+    <div class="center-text"><button ng-style='{opacity: (smsCode && phone.length > 4?1:0.5)}' class="send-code icon-checkmark" ng-click="signUp2fa()"><span ng-bind="'To confirm' | translate"></span></button></div>
+    <div class="reg-footer">
+      <div class="reset-code">
+        <span>{{ timer }}<br></span>
+        <span ng-bind="'to reset the code' | translate"></span>
+      </div>
+    </div>
+  </div>
+</div>

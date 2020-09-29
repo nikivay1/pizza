@@ -1,0 +1,130 @@
+<div ng-show="!cart || !profileData">
+    <h4 align="center" ng-bind="('Profile loading' | translate) + '...'"></h4>
+</div>
+
+<div class="profile-main" ng-if="cart && profileData">
+    <div class="profile-title">
+        <span ng-bind="'Main info' | translate"></span>
+        <span class="profile-save-btn" ng-click="changeProfile()" ng-show="changeMode"><span class="mobile-hidden" ng-bind="'Save' | translate"></span></span>
+        <span class="profile-change-btn" ng-click="switchChangeMode(true)" ng-hide="changeMode"><span class="mobile-hidden" ng-bind="'Edit' | translate"></span></span>
+    </div>
+    <div class="profile-warning" ng-hide="changeMode">
+        <img src="/static/img/profile/attention.png" alt="">
+        <span ng-bind="'PizzaRally does not publish any data without your permission.' | translate"></span>
+    </div>
+    <div class="profile-forms">
+        <div class="profile-form">
+          <span ng-show="changeMode">
+              <input type="text" ng-model="profileData.first_name" id="name" placeholder="{{ 'Name' | translate }}" />
+          </span>
+            <span ng-hide="changeMode" ng-bind="profileData.first_name"></span>
+            <span class="profile-label" ng-hide="changeMode" ng-bind="'Name' | translate"></span>
+            <img ng-show="changeMode" src="/static/img/profile/pencil2.png" alt="">
+        </div>
+        <div class="profile-form">
+          <!-- <span ng-show="changeMode">
+              <input type="text" ng-model="profileData.phone" id="phone" placeholder="Телефон" />
+          </span> -->
+            <span ng-bind="profileData.phone"></span>
+            <span class="profile-label profile-phone" ng-hide="changeMode"><img src="/static/img/mobile/ic-phone.png" alt="" class="mobile-visible"><span class="mobile-hidden" ng-bind="'Phone' | translate"></span></span>
+            <img ng-show="changeMode" src="/static/img/profile/lock.png" alt="">
+        </div>
+        <div class="profile-form form-margin">
+              <span class="grey-color" ng-show="changeMode">
+                  <input type="email" ng-model="profileData.email" id="email" placeholder="E-mail" />
+              </span>
+            <span class="grey-color" ng-hide="changeMode" ng-bind="profileData.email"></span>
+            <span class="profile-label" ng-hide="changeMode"><img src="/static/img/mobile/ic-email.png" alt="" class="mobile-visible"><span class="mobile-hidden">E-mail</span></span>
+            <img ng-show="changeMode" src="/static/img/profile/pencil2.png" alt="">
+        </div>
+        <div ng-hide="changeMode" class="profile-form form-margin">
+            <div>
+                <p ng-bind="'Password change is available' | translate"></p>
+            </div>
+        </div>
+    </div>
+    <div ng-show="changeMode" class="profile-history"><span class="history-title" ng-bind="'Password change' | translate"></span></div>
+    <div ng-show="changeMode" class="profile-forms">
+        <div class="profile-form" style="width:100%">
+            <span>
+                <input type="password" ng-model="passwordData.oldPassword" placeholder="{{ 'Old password' | translate }}" ng-required="passwordIsRequiredField()"/>
+            </span>
+        </div>
+        <div class="profile-form" style="width:100%">
+            <span>
+                <input type="password" ng-model="passwordData.password1" placeholder="{{ 'Type new password' | translate }}" ng-required="passwordIsRequiredField()"/>
+            </span>
+        </div>
+        <div class="profile-form" style="width:100%">
+            <span>
+                <input type="password" ng-model="passwordData.password2" placeholder="{{ 'Retype new password' | translate }}" ng-required="passwordIsRequiredField()"/>
+            </span>
+        </div>
+    </div>
+    <div class="profile-history">
+        <span class="history-title" ng-bind="'Order history' | translate"></span>
+        <div ng-repeat="orderItem in profileData.orders">
+            <span ng-bind="'Заказ #' + orderItem.number.toString()"></span>
+            <span ng-bind="orderItem.created_at | date:'dd.MM.yyyy'"></span>
+            <span>&nbsp;|&nbsp;</span>
+          <span><i class="mobile-hidden">&nbsp;</i><a class="check_order_status" target="_blank" ng-href="{{ orderItem.url }}"><img src="/static/img/mobile/ic-right-black.png" alt="" class="mobile-visible"><span class="mobile-hidden" ng-bind="'View status' | translate"></span></a></span>
+        </div>
+        <div ng-if="profileData.orders.length == 0"><span ng-bind="('You have not made purchases!' | translate) + '!'"></span></div>
+    </div>
+    <div class="profile-social">
+        <span class="social-title" ng-bind="'Social networks' | translate"></span>
+        <div class="profile-social-network">
+            <img src="/static/img/profile/ic-vk-color.png" alt="">
+            <span ng-bind="'To relate with VK' | translate"></span>
+            <div class="profile-vk"><span ng-bind="'To relate' | translate"></span></div>
+        </div>
+        <div class="profile-social-network">
+            <img src="/static/img/profile/ic-fb-color.png" alt="">
+            <span ng-bind="'To relate with Facebook' | translate"></span>
+            <div class="profile-fb"><span ng-bind="'To relate' | translate"></span></div>
+        </div>
+        <div class="profile-social-network">
+            <img src="/static/img/profile/ic-twitter-color.png" alt="">
+            <span ng-bind="'To relate with Twitter' | translate"></span>
+            <div class="profile-tw"><span ng-bind="'To relate' | translate"></span></div>
+        </div>
+        <div class="profile-social-network">
+            <img src="/static/img/profile/ic-g-color.png" alt="">
+            <span ng-bind="'To relate with Google+' | translate"></span>
+            <div class="profile-go"><span ng-bind="'To relate' | translate"></span></div>
+        </div>
+    </div>
+</div>
+<div class="profile-aside" ng-if="cart && profileData">
+    <div class="profile-bucket">
+        <div class="bucket-header">
+            <span ng-bind="'Cart' | translate"></span>
+            <span>{{ getTotalCartPrice() }} {{ 'rub' | translate }}</span>
+        </div>
+        <div class="bucket-list">
+            <div class="bucket-menu" ng-repeat="item in cart.items">
+                <img ng-src="{{ item.product_url }}" alt="{{ item.name }}">
+                <div>
+                    <span ng-bind="item.product_name"></span>
+                    <span>{{ item.amount }} шт.<span ng-if="item.price.name"> | {{ item.price.name }}</span></span>
+                </div>
+                <span class="bucket-price">{{ getCartItemPrice(item) }} {{ 'rub' | translate }}</span>
+            </div>
+        </div>
+        <div class="bucket-buttons" ng-show="cart.items.length == 0" ng-bind="'No items' | translate"></div>
+        <div class="bucket-buttons" ng-show="cart.items.length > 0">
+            <div ng-click="cleanCart()" ng-bind="'Clean' | translate"></div>
+            <div ng-click="openCartDialog()" ng-bind="('Go to order' | translate).toUpperCase()"></div>
+        </div>
+    </div>
+    <div class="profile-favorite">
+        <div class="favorite-header">
+            <span ng-bind="'Favorites' | translate"></span>
+            <img src="/static/img/profile/trash-24.png" alt="">
+        </div>
+        <div class="favorite-items">
+            <img src="/static/img/profile/star-48.png" alt="">
+            <span ng-bind="'You have not favorite products' | translate"></span>
+        </div>
+    </div>
+</div>

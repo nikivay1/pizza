@@ -1,0 +1,27 @@
+{
+  "name": "PizzaRailly",
+  "version": "1.0.0",
+  "description": "make venv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Hacko/good-deals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Hacko/good-deals/issues"
+  },
+  "homepage": "https://gitlab.com/Hacko/good-deals#README",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-ng-templates": "0.0.10",
+    "gulp-uglify": "^3.0.0"
+  }
+}

@@ -1,0 +1,284 @@
+/* line 16, ../sass/registration.sass */
+.registration {
+  position: relative;
+  width: 90%;
+  max-width: 520px;
+  background: url('../img/texture_food.png') white no-repeat;
+  background-size: 560px;
+  background-position: 48% 71%;
+  border-radius: 10px;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+/* line 27, ../sass/registration.sass */
+.reg-title {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 34px;
+  margin-right: 35px;
+  font-size: 16px;
+  font-family: 'GothamPro-Medium';
+  align-items: center;
+}
+/* line 34, ../sass/registration.sass */
+.reg-title span {
+  line-height: 24px;
+  margin-left: 10px;
+}
+
+/* line 38, ../sass/registration.sass */
+.reg-close {
+  opacity: 0.4;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+}
+/* line 43, ../sass/registration.sass */
+.reg-close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* line 47, ../sass/registration.sass */
+.reg-form {
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+}
+
+/* line 52, ../sass/registration.sass */
+.reg-place-code {
+  font-family: 'GothamPro';
+  color: black;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* line 58, ../sass/registration.sass */
+.reg-code {
+  width: 240px;
+  border-bottom: 3px solid #3c8636;
+  margin: 30px auto 0;
+  padding-bottom: 5px;
+}
+/* line 64, ../sass/registration.sass */
+.reg-code input {
+  font-size: 28px;
+  font-family: 'GothamPro';
+  width: 120px;
+  border: none;
+  outline: none;
+  color: #3c8636;
+  text-align: center;
+  background: transparent;
+}
+/* line 71, ../sass/registration.sass */
+.reg-code input::placeholder {
+  color: #c6c6c6;
+  font-size: 28px;
+  font-family: 'GothamPro';
+}
+
+/* line 76, ../sass/registration.sass */
+.reg-input {
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  border-bottom: 3px solid #eeeeee;
+  margin: 20px auto 0;
+  font-size: 16px;
+  position: relative;
+}
+/* line 82, ../sass/registration.sass */
+.reg-input span {
+  font-family: 'GothamPro';
+  color: black;
+  margin-left: 10px;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 87, ../sass/registration.sass */
+.reg-input input {
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: 'GothamPro';
+  width: 250px;
+  border: none;
+  outline: none;
+  padding-right: 40px;
+  background: transparent;
+  line-height: 30px;
+  height: 30px;
+}
+.reg-input .phone {
+  padding-left: 15px;
+}
+/* line 94, ../sass/registration.sass */
+.reg-input input::placeholder {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-family: 'GothamPro';
+}
+
+/* line 99, ../sass/registration.sass */
+.reg-dat {
+  background: #f44336;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -3px;
+}
+
+/* line 108, ../sass/registration.sass */
+.center-text {
+  text-align: center;
+}
+.send-code {
+  font-family: 'GothamPro-Medium';
+  color: #ffffff;
+  background: #3c8636;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 500px;
+  opacity: 0.5;
+  font-size: 16px;
+  padding: 13px 30px;
+  margin: 35px 0 15px;
+  border: 0;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.send-code > span {
+  vertical-align: middle;
+}
+.send-code:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 18px;
+  margin-left: 15px;
+  background: url('../img/sent.png');  
+}
+.send-code.icon-checkmark:after {
+  background: url('../img/checkmark.png');
+  width: 18px;
+  height: 14px;
+}
+
+/* line 123, ../sass/registration.sass */
+.reg-footer {
+  margin-top: 30px;
+  width: 100%;
+  border-top: 1px solid #eeeeee;
+  font-size: 14px;
+  font-family: 'GothamPro';
+  text-align: center;
+  padding: 20px;
+}
+/* line 131, ../sass/registration.sass */
+.reg-footer img {
+  margin-top: 20px;
+}
+
+/* line 134, ../sass/registration.sass */
+.reg-question {
+  color: #757575;
+  margin-top: 10px;
+}
+
+/* line 138, ../sass/registration.sass */
+.reg-enter {
+  color: #3c8636;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* line 143, ../sass/registration.sass */
+.forget-password {
+  color: #3c8636;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'GothamPro';
+  margin-top: 15px;
+}
+
+/* line 151, ../sass/registration.sass */
+.less-margin {
+  margin-top: 15px !important;
+}
+
+/* line 154, ../sass/registration.sass */
+.reset-code {
+  margin: 10px 0;
+  font-family: 'GothamPro';
+  font-size: 16px;
+  color: black;
+}
+
+/* line 162, ../sass/registration.sass */
+.reg-sms {
+  font-family: 'GothamPro';
+  font-size: 14px;
+  color: black;
+  text-align: center;
+}
+
+/* line 170, ../sass/registration.sass */
+.reg-reset-password {
+  font-family: 'GothamPro';
+  color: #3c8636;
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.reg-desc {
+  font-size: 12px;
+  line-height: normal;
+  color: #757575;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.reg-desc > a {
+  color: #3c8636;
+  cursor: pointer;
+}
+
+.location_form .reg-form {
+  margin-top: 80px;
+}
+.location_form select {
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: 'GothamPro';
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  line-height: 30px;
+  height: 30px;
+}
+.location_form .send-code {
+  margin-top: 50px;
+}
+.location_form .send-code:after {
+  display: none;
+}
+
+
+@media (max-width: 520px) {
+  .reg-title {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

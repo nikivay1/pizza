@@ -1,0 +1,43 @@
+<div class="btf-modal-inner full-width">
+  <div class="btf-modal-header container">
+    <div class="row_table">
+      <div>
+        <img src="/static/img/map-marker.png"><span class="modal-title" ng-bind="'Contacts' | translate"></span>
+      </div>
+      <div class="right-text">
+        <div class="btf-modal-close" ng-click="closeDialog()"><span ng-bind="'Close window' | translate"></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="map__block">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type=text/javascript></script>
+    <script type=text/javascript>
+      ymaps.ready(function(){
+        var placemark = new ymaps.Placemark([43.410262, 39.9695], {}, {
+          preset: "islands#redDotIcon",
+          iconColor: "#e3000f"
+        });
+        var map2 = new ymaps.Map("map2", {
+          center: [43.410262, 39.965],
+          zoom: 16,
+          controls: []
+        });
+        map2.geoObjects.add(placemark);
+      });
+    </script>
+    <div class="map__info-wrapper container">
+      <div class="map__info">
+        <img src="/static/img/icons/ic-marker.png" alt="" class="map__info-icon"><span ng-bind="config.address"></span>
+      </div>
+      <div class="map__info">
+        <img src="/static/img/icons/ic-phone.png" alt="" class="map__info-icon">
+        <a href="tel:{{ config.phone }}">{{ config.phone }}</a>
+        <span class="map__info-desc" ng-bind="config.address_comment"></span>
+      </div>
+      <div class="map__info">
+        <img src="/static/img/icons/ic-email.png" alt="" class="map__info-icon"><span ng-bind="config.email"></span>
+      </div>
+    </div>
+    <div id="map2" style="width:100%;height:400px;"></div>
+  </div>
+</div>

@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block extra_head %}
+  <script src="{% static "js/custom.js" %}" type="application/javascript"></script>
+  <link rel="stylesheet" href="{% static 'css/angucomplete.css' %}"/>
+  <script src="{% static "app/app.js" %}" type="application/javascript"></script>
+{% endblock extra_head %}
+
+{% block content %}
+<div class="pattern">
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            {% for slider_image in site_config.slider_images.all %}
+              <div class="swiper-slide"><img src="{{ slider_image.image.url }}" alt=""></div>
+            {% endfor %}
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <section class="products" ng-controller="productListCtrl">
+        <div class="container">
+            <div class="products-wrapper products-wrapper--favorite"
+                 ng-if="actionProducts.length > 0" ng-init="products=actionProducts" ng-include="productListUrl">
+            </div>
+
+            <a name="product-list"></a>
+
+            <div class="products-separator"></div>
+
+
+            <div class="products-filter">
+                <div class="products-filter__chooses">
+                    <a href="" class="products-filter__display"><img src="{% static 'img/icons/ic-eye.png' %}" alt=""></a>
+
+                    <ul class="products-filter__list">
+                        {%  for category in category_list %}
+                            {% if category.show_on_top_menu %}
+                                <li>
+                                    <input id="category-tag-{{ category.id }}" type="checkbox" ng-checked="isActiveCategory({{ category.id }})" ng-click="setActiveCategory({{ category.id }})" name="pizza" hidden />
+                                    <label for="category-tag-{{ category.id }}">{{ category.name }}</label>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="products-filter__categories">
+                    <h1 style="font-size:1.20em;">Заказать пиццу в Адлере, Красной поляне</h1>
+                    <!--<img src="{% static 'img/icons/ic-sort.png' %}" alt="" class="products-filter__categories-icon">
+                    {% trans "By categories" %}
+                    <img src="{% static 'img/icons/ic_expand_more_black.png' %}" alt="" class="products-filter__categories-arrow">-->
+                </div>
+
+            </div>
+
+            <div class="products-wrapper" ng-include="productListUrl"></div>
+
+            <div class="products-filter" ng-show="products.length == 0">
+                <button class="button button--big button--whitecolor products__more">{% trans "Products wasn't found" %}</button>
+            </div>
+            <div class="products-wrapper">
+
+                <button
+                        class="button button--big button--whitecolor products__more"
+                        ng-style="{display: (loading || !hasNext)?'none':'flex'}"
+                        ng-click="nextPage()"
+                        style="display: none;">
+                    <img src="{% static 'img/icons/ic-download.png' %}" alt="" class="products__more-icon"> {% trans "To load more" %}
+                </button>
+            </div>
+
+            <div class="products-filter" ng-show="loading">
+                <button class="button button--big button--whitecolor products__more">{% trans "Products loading" %}...</button>
+            </div>
+        </div>
+    </section>
+    <section class="banners">
+        <div class="container">
+            <div class="banner banner--first">
+                <img src="{% static 'img/icons/Shop-96.png' %}" alt="" class="banner__icon">
+                <div class="banner__text">
+                    {% trans "to taste the real Italian pizza, you don't need to go to Italy and order a pizza from us" %}!
+                </div>
+                <a href="/#!?category=1#product-list" class="button button--big banner__button">{% trans "go to pizza" %}</a>
+            </div>
+            <div class="banner banner--second">
+                <div class="banner__text">
+                    {% blocktrans %}In our pizza<br> we use the <br><span class="banner__text--big"></span><br> natural <br>ingredients <br>from Italy!{% endblocktrans %}
+                </div>
+            </div>
+
+            <div class="banner banner--first banner--third">
+                {% if site_config.bottom_right_banner_icon %}<img src="{{ site_config.bottom_right_banner_icon.url }}" alt="" class="banner__icon">{% endif %}
+                <div class="banner__text">
+                    {{ site_config.bottom_right_banner_text }}
+                </div>
+                <button class="button button--big banner__button" ng-click="openDeliveryDialog()">{% trans "Read more about delivery" %}</button>
+            </div>
+        </div>
+    </section>
+    <div class="about-us">
+        <div class="container">
+            <div class="about-us__block">
+                <img src="{% static 'img/cook.png' %}" alt="" class="about-us__photo">
+                <div class="about-us__text">
+                    <img src="{% static 'img/logo.png' %}" alt="" class="about-us__logo">
+                    <div class="about-us__heading">{% trans "Massio Bottura" %}</div>
+                    <div class="about-us__subheading">
+                        {% trans "Italian chef" %}
+                    </div>
+                    <p class="about-us__paragraph">
+                        {% trans 'In 1986, Massimo gets a chance to release his passion of cooking. It becomes the owner of his first trattoria "Trattoria del Campazzo". He learned the secrets of classic French cuisine at George Konya (Georges Cogny), and in 1992 Alain Ducasse (Alain Ducasse) invite Massimo for a few months in the "Le Louis XV" in Monaco, where he continues his training.' %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="map">
+        <div class="container">
+            <div class="map__block">
+                <div id="map" style="width:100%;height:400px;"></div>
+                <div class="map__info-wrapper">
+                    <div class="map__info">
+                        <img src="{% static 'img/icons/ic-marker.png' %}" alt="" class="map__info-icon">{{ site_config.address }}
+                    </div>
+                    <div class="map__info">
+                        <img src="{% static 'img/icons/ic-phone.png' %}" alt="" class="map__info-icon">{{ site_config.phone }}<span class="map__info-desc">{{ site_config.address_comment }}</span>
+                    </div>
+                    <div class="map__info">
+                        <img src="{% static 'img/icons/ic-email.png' %}" alt="" class="map__info-icon"> {{ site_config.email }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<link rel="stylesheet" href="{% static "css/swiper.min.css" %}"/>
+<script src="{% static "js/swiper.min.js" %}"></script>
+
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      effect: 'fade'
+  })
+</script>
+
+{% endblock content %}

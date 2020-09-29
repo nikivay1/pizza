@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block extra_head %}
+  {% if page_redirect %}
+    <meta http-equiv="refresh" content="3;url={{ page_redirect }}"/>
+  {% endif %}
+
+  <script src="{% static "js/custom.js" %}" type="application/javascript"></script>
+  <link rel="stylesheet" href="{% static 'css/angucomplete.css' %}"/>
+  <script src="{% static "app/app.js" %}" type="application/javascript"></script>
+
+{% endblock extra_head %}
+
+{% block content %}
+  <div class="action policy">
+    <div class="action-left">
+      <div class="action-main">
+        <div class="action-content">
+          <a name="oplata"><h3>Ошибка</h3></a><br>
+          <br>
+            <p>{{ text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

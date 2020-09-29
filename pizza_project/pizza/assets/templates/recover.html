@@ -1,0 +1,16 @@
+<div class="registration btf-modal-inner">
+  <div class="reg-title">
+    <img src="/static/img/ic-lockpass.png">
+    <span ng-bind="'Password recover' | translate"></span>
+    <img class="reg-close" src="/static/img/ic-close-black.png" ng-click="closeDialog()">
+  </div>
+  <div class="reg-form">
+    <div class="center-text"><span class="reg-reset-password" ng-bind="'To password reminder, enter the phone number' | translate"></span></div>
+    <div class="reg-input">
+      <span>+</span>
+      <input class="phone" type="tel" required placeholder="{{ 'Phone number' | translate }}" ng-model="phone">
+    </div>
+    <div class="center-text"><button ng-style='{opacity: (phone && phone.length > 10?1:0.5)}' class="send-code" ng-click="passwordRecover()"><span ng-bind="'Send' | translate"></span></button></div>
+    <div class="reg-footer less-margin"></div>
+  </div>
+</div>

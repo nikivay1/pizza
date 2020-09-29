@@ -1,0 +1,126 @@
+/*
+ * angular-modal v0.1.0
+ * (c) 2013 Brian Ford http://briantford.com
+ * License: MIT
+ */
+.btf-modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+.btf-modal {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+.btf-modal img {
+  max-width: 100%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+}
+.btf-modal-container {
+  width: 100%;
+  margin: auto;
+}
+.btf-modal-inner {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.btf-modal-inner.full-width {
+  width: 100%;
+  background: transparent;
+  padding: 0;
+  margin: 20px auto;
+}
+.btf-modal-inner.full-width + .overlay {
+  background: rgba(255,255,255,0.98);
+}
+.btf-modal-header {
+  margin-bottom: 40px;
+}
+.btf-modal-header img {
+  margin-right: 15px;
+}
+.modal-title {
+  font-size: 24px;
+  font-family: 'GothamPro-Light';
+  color: #000;
+}
+.right-text {
+  text-align: right;
+}
+.btf-modal-close {
+  cursor: pointer;
+  font-family: 'GothamPro';
+}
+.btf-modal-close > span {
+  vertical-align: middle;
+  color: #c9c9c9;
+}
+.btf-modal-close:hover > span {
+  color: #999;
+}
+.btf-modal-close:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: url('../img/close.png');
+  margin-left: 12px;
+}
+/*.modal a.close-modal {
+  position: absolute;
+  top: 49.5px;
+  right: 99.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background: url(../img/icons/close.png) no-repeat;
+}*/
+.close-modal {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  font-size: 16px;
+}
+.row_table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.row_table > * {
+  display: table-cell;
+}
+@media (max-width: 1140px) {
+  .close-modal {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 680px) {
+  .btf-modal-close > span {
+    display: none;
+  }
+  .btf-modal-header {
+    margin-bottom: 20px;
+  }
+}

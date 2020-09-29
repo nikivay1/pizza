@@ -1,0 +1,2893 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-24 21:12+0300\n"
+"PO-Revision-Date: 2017-10-26 08:27+0230\n"
+"Last-Translator: b'  <79889501003@yandex.ru>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Translated-Using: django-rosetta 0.7.13\n"
+
+#: pizza/cart/admin.py:15
+msgid "primary"
+msgstr "основной"
+
+#: pizza/cart/admin.py:18
+msgid "payment"
+msgstr "оплата"
+
+#: pizza/cart/admin.py:21
+#| msgid "delivery and address"
+msgid "delivery/address and cart"
+msgstr "доставка/адрес и корзина"
+
+#: pizza/cart/admin.py:32 pizza/cart/models.py:191
+msgid "started at"
+msgstr "создан в"
+
+#: pizza/cart/admin.py:40
+msgid "expired at"
+msgstr "создан в"
+
+#: pizza/cart/admin.py:45 pizza/cart/models.py:144
+msgid "number"
+msgstr "номер"
+
+#: pizza/cart/admin.py:50 pizza/cart/models.py:289 pizza/cart/models.py:355
+#: pizza/cart/models.py:356 pizza/core/models.py:36
+msgid "address"
+msgstr "адрес"
+
+#: pizza/cart/admin.py:60 pizza/cart/models.py:39 pizza/cart/models.py:48
+#: pizza/cart/models.py:152
+msgid "cart"
+msgstr "корзина"
+
+#: pizza/cart/models.py:21 pizza/cart/models.py:159
+#: pizza/catalog/models.py:249 pizza/users/models.py:136
+#: pizza/users/models.py:242
+msgid "user"
+msgstr "пользователь"
+
+#: pizza/cart/models.py:26 pizza/users/models.py:268
+msgid "token"
+msgstr "токен"
+
+#: pizza/cart/models.py:40
+msgid "carts"
+msgstr "корзины"
+
+#: pizza/cart/models.py:53 pizza/catalog/models.py:181
+#: pizza/catalog/models.py:211
+msgid "price"
+msgstr "цена"
+
+#: pizza/cart/models.py:57
+msgid "amount"
+msgstr "количество"
+
+#: pizza/cart/models.py:72
+msgid "cart item"
+msgstr "запись корзины"
+
+#: pizza/cart/models.py:73
+msgid "cart items"
+msgstr "записи корзины"
+
+#: pizza/cart/models.py:79
+msgid "new"
+msgstr "сейчас оформляют"
+
+#: pizza/cart/models.py:80 pizza/users/models.py:253
+msgid "wait"
+msgstr "обрабатывается! Наш менеджер свяжется с вами для уточнения деталей"
+
+#: pizza/cart/models.py:81
+msgid "failed"
+msgstr "ошибка"
+
+#: pizza/cart/models.py:82 pizza/users/models.py:254
+msgid "confirmed"
+msgstr ""
+"принят и отправлен на кухню! Пожалуйста, не закрывайте данную страницу до "
+"получения заказа"
+
+#: pizza/cart/models.py:83
+msgid "progress"
+msgstr "обработка"
+
+#: pizza/cart/models.py:84 pizza/cart/models.py:284
+msgid "delivery"
+msgstr "доставка"
+
+#: pizza/cart/models.py:85
+msgid "canceled"
+msgstr "отменен"
+
+#: pizza/cart/models.py:86
+msgid "done"
+msgstr "завершен"
+
+#: pizza/cart/models.py:90
+msgid "on delivery"
+msgstr "доставка"
+
+#: pizza/cart/models.py:91
+msgid "online"
+msgstr ""
+
+#: pizza/cart/models.py:95
+msgid "null"
+msgstr ""
+
+#: pizza/cart/models.py:96
+msgid "registered and didn't paid"
+msgstr "зарегистрирован, но не оплачен"
+
+#: pizza/cart/models.py:97
+msgid "amount was hold"
+msgstr "сумма была удержана"
+
+#: pizza/cart/models.py:98
+msgid "success"
+msgstr "успешно"
+
+#: pizza/cart/models.py:99
+msgid "auth cancelled"
+msgstr "отменен"
+
+#: pizza/cart/models.py:100
+msgid "amount returned"
+msgstr "сумма возвращена"
+
+#: pizza/cart/models.py:101
+msgid "initialized by emitent"
+msgstr "инициализирован эмитентом"
+
+#: pizza/cart/models.py:102
+msgid "auth rejected"
+msgstr "авторизация отклонена"
+
+#: pizza/cart/models.py:106
+msgid "payment type"
+msgstr "тип оплаты"
+
+#: pizza/cart/models.py:113
+msgid "payment status"
+msgstr "статус сотрудника"
+
+#: pizza/cart/models.py:120
+msgid "internal order id"
+msgstr "внутренний ID заказа"
+
+#: pizza/cart/models.py:128
+msgid "sb order id"
+msgstr "заказ"
+
+#: pizza/cart/models.py:136
+msgid "sb form url"
+msgstr ""
+
+#: pizza/cart/models.py:166 pizza/users/models.py:267
+msgid "status"
+msgstr "статус"
+
+#: pizza/cart/models.py:179
+msgid "comment"
+msgstr "комментарий к адресу"
+
+#: pizza/cart/models.py:185
+#| msgid "created at"
+msgid "sb created at"
+msgstr "время создания ссылки для сбербанка"
+
+#: pizza/cart/models.py:252
+#| msgid "old price"
+msgid "total price"
+msgstr "общая цена"
+
+#: pizza/cart/models.py:277
+msgid "order"
+msgstr "заказ"
+
+#: pizza/cart/models.py:278
+msgid "orders"
+msgstr "заказы"
+
+#: pizza/cart/models.py:285
+msgid "pickup"
+msgstr "самовывоз"
+
+#: pizza/cart/models.py:290 pizza/cart/models.py:303
+msgid "arena"
+msgstr "стадион"
+
+#: pizza/cart/models.py:293
+msgid "username"
+msgstr "имя"
+
+#: pizza/cart/models.py:294 pizza/core/models.py:40 pizza/users/models.py:76
+#: pizza/users/models.py:265
+msgid "phone"
+msgstr "телефон"
+
+#: pizza/cart/models.py:295
+msgid "delivery type"
+msgstr "тип доставки"
+
+#: pizza/cart/models.py:297
+msgid "type"
+msgstr "тип"
+
+#: pizza/cart/models.py:299
+msgid "street"
+msgstr "улица"
+
+#: pizza/cart/models.py:300
+msgid "house"
+msgstr "дом"
+
+#: pizza/cart/models.py:301
+msgid "landmark"
+msgstr "ориентир"
+
+#: pizza/cart/models.py:304
+msgid "tribune"
+msgstr "трибуна"
+
+#: pizza/cart/models.py:305
+msgid "row number"
+msgstr "номер строки"
+
+#: pizza/cart/models.py:306
+msgid "col number"
+msgstr "номер колонки"
+
+#: pizza/cart/serializers.py:46
+msgid "Incorrect address type"
+msgstr "некорректный тип адреса"
+
+#: pizza/cart/serializers.py:174
+msgid "must be greater 0"
+msgstr "должно быть больше 0"
+
+#: pizza/cart/views/api.py:147
+#: pizza/core/templates/translate_js/contacts.html:60
+msgid "Delivery don't work now"
+msgstr ""
+"Доставка и заказ недоступны в данный момент.\n"
+"\n"
+"Закажи в рабочее время с 10:00 до 21:00 и участвуй в акции - 10 пицца бесплатно."
+
+#: pizza/cart/views/api.py:215
+msgid "order was created more that 2 days ago, you cann't to pay it"
+msgstr "Заказ был создан более чем два дня назад, Вы не можете его оплатить"
+
+#: pizza/cart/views/api.py:221
+msgid "Order already paid"
+msgstr "Заказ уже оплачен"
+
+#: pizza/cart/views/api.py:223
+msgid "Order link was created"
+msgstr "Ссылка для оплаты заказа создана"
+
+#: pizza/cart/views/api.py:225
+msgid "Error on create order link"
+msgstr "Ошибка при создании ссылки для оплаты заказа"
+
+#: pizza/catalog/admin.py:19
+msgid "Preview"
+msgstr "предпросмотр"
+
+#: pizza/catalog/models.py:17 pizza/catalog/models.py:62
+#: pizza/catalog/models.py:83 pizza/catalog/models.py:166
+#: pizza/core/models.py:82
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:84
+#: venv/lib/python3.5/site-packages/djcelery/models.py:211
+#: venv/lib/python3.5/site-packages/djcelery/models.py:342
+#: venv/lib/python3.5/site-packages/kombu/transport/django/models.py:12
+msgid "name"
+msgstr "имя"
+
+#: pizza/catalog/models.py:24 pizza/catalog/models.py:65
+#: pizza/core/models.py:83
+msgid "icon"
+msgstr "значок"
+
+#: pizza/catalog/models.py:29 pizza/catalog/models.py:127
+#: pizza/catalog/models.py:188 pizza/catalog/models.py:234
+#: pizza/core/models.py:86
+msgid "position"
+msgstr "положение"
+
+#: pizza/catalog/models.py:34
+msgid "show on top menu"
+msgstr "Показывать в верхнем меню"
+
+#: pizza/catalog/models.py:39
+msgid "show on bottom menu"
+msgstr "Показывать в нижнем меню"
+
+#: pizza/catalog/models.py:53
+msgid "product category"
+msgstr "категория продукта"
+
+#: pizza/catalog/models.py:54
+msgid "product categories"
+msgstr "категории продуктов"
+
+#: pizza/catalog/models.py:66
+msgid "color hex"
+msgstr "выбор цвета"
+
+#: pizza/catalog/models.py:66
+msgid "example: #651fff"
+msgstr "пример: #651fff"
+
+#: pizza/catalog/models.py:75 pizza/catalog/models.py:96
+#: pizza/core/models.py:174
+msgid "action"
+msgstr "действие"
+
+#: pizza/catalog/models.py:76 pizza/core/models.py:175
+msgid "actions"
+msgstr "действия"
+
+#: pizza/catalog/models.py:88
+msgid "ingredients"
+msgstr "ингридиенты"
+
+#: pizza/catalog/models.py:105
+msgid "category"
+msgstr "категория"
+
+#: pizza/catalog/models.py:109 pizza/catalog/models.py:193
+#: pizza/users/models.py:115
+msgid "active"
+msgstr "активно"
+
+#: pizza/catalog/models.py:114
+msgid "old price"
+msgstr "старая цена"
+
+#: pizza/catalog/models.py:123
+msgid "specials"
+msgstr "сопутствующие товары"
+
+#: pizza/catalog/models.py:142
+msgid "You can add 3 products for actions"
+msgstr "Вы можете добавить 3 товара в список акций"
+
+#: pizza/catalog/models.py:146 pizza/catalog/models.py:160
+#: pizza/catalog/models.py:254
+msgid "product"
+msgstr "продукт"
+
+#: pizza/catalog/models.py:147
+msgid "products"
+msgstr "продукты"
+
+#: pizza/catalog/models.py:172
+msgid "short name"
+msgstr "короткое имя (размер, объем) без СМ, Л и тд."
+
+#: pizza/catalog/models.py:176
+msgid "would be used in specials"
+msgstr "будет использоваться в дополнительном"
+
+#: pizza/catalog/models.py:212
+msgid "prices"
+msgstr "цена"
+
+#: pizza/catalog/models.py:220
+msgid "object id"
+msgstr "ID объекта"
+
+#: pizza/catalog/models.py:225
+msgid "object name"
+msgstr "имя объекта"
+
+#: pizza/catalog/models.py:229 pizza/catalog/models.py:241
+#: pizza/core/models.py:120
+msgid "image"
+msgstr "изображение"
+
+#: pizza/catalog/models.py:242
+msgid "images"
+msgstr "изображения"
+
+#: pizza/catalog/models.py:258 pizza/core/models.py:25
+#: pizza/users/models.py:271
+#: venv/lib/python3.5/site-packages/djcelery/models.py:71
+msgid "created at"
+msgstr "создан в"
+
+#: pizza/catalog/models.py:263 pizza/catalog/models.py:264
+msgid "favorite"
+msgstr "избранное"
+
+#: pizza/core/admin.py:39 pizza/core/admin.py:40
+msgid "PIZZA RALLY"
+msgstr ""
+
+#: pizza/core/apps.py:7
+msgid "core"
+msgstr "ядро"
+
+#: pizza/core/models.py:17 pizza/users/models.py:70
+msgid "id"
+msgstr "id"
+
+#: pizza/core/models.py:26
+msgid "updated at"
+msgstr "обновлено в"
+
+#: pizza/core/models.py:34
+msgid "header title"
+msgstr "заголовок"
+
+#: pizza/core/models.py:37
+msgid "address comment"
+msgstr "комментарий к адресу"
+
+#: pizza/core/models.py:39
+msgid "schedule"
+msgstr "график"
+
+#: pizza/core/models.py:41
+msgid "notification is enabled"
+msgstr "уведомления о заказе включены"
+
+#: pizza/core/models.py:42
+msgid "phone notification"
+msgstr "Номер для уведомлений о заказе"
+
+#: pizza/core/models.py:43
+msgid "email"
+msgstr "email"
+
+#: pizza/core/models.py:44
+msgid "order minutes"
+msgstr "минут заказа"
+
+#: pizza/core/models.py:44
+msgid "order creation time"
+msgstr "дата создания заказа"
+
+#: pizza/core/models.py:45 pizza/core/models.py:46
+msgid "yandex/google metric"
+msgstr "Yandex/Google метрки"
+
+#: pizza/core/models.py:47
+msgid "delivery to arena is allowed"
+msgstr "доступна доставка на стадион"
+
+#: pizza/core/models.py:49
+msgid "work day started at"
+msgstr "начало работы в"
+
+#: pizza/core/models.py:50
+msgid "work day ended at"
+msgstr "конец рабочего дня"
+
+#: pizza/core/models.py:53 pizza/settings.py:287
+msgid "Site config"
+msgstr "Настройки сайта"
+
+#: pizza/core/models.py:56
+msgid "site config"
+msgstr "настройки сайта"
+
+#: pizza/core/models.py:84
+msgid "icon alt"
+msgstr "alt иконки"
+
+#: pizza/core/models.py:85
+msgid "http link"
+msgstr "http ссылка"
+
+#: pizza/core/models.py:93
+msgid "social link"
+msgstr "ссылка на соц.сети"
+
+#: pizza/core/models.py:94
+msgid "social links"
+msgstr "ссылки на соц.сети"
+
+#: pizza/core/models.py:100
+msgid "slug name"
+msgstr "служебное имя"
+
+#: pizza/core/models.py:101 pizza/core/models.py:151
+msgid "text"
+msgstr "текст"
+
+#: pizza/core/models.py:111
+msgid "sms template"
+msgstr "шаблон смс"
+
+#: pizza/core/models.py:112
+msgid "sms templates"
+msgstr "шаблоны смс"
+
+#: pizza/core/models.py:119
+msgid "config"
+msgstr "настройки сайта"
+
+#: pizza/core/models.py:121
+msgid "ordering"
+msgstr "заказ"
+
+#: pizza/core/models.py:125
+msgid "slider image"
+msgstr "изображение для слайдера"
+
+#: pizza/core/models.py:126
+msgid "slider images"
+msgstr "изображения"
+
+#: pizza/core/models.py:132
+msgid "active from"
+msgstr "активно"
+
+#: pizza/core/models.py:139
+msgid "active until"
+msgstr "активно"
+
+#: pizza/core/models.py:146
+msgid "title"
+msgstr "заголовок"
+
+#: pizza/core/models.py:157
+msgid "picture"
+msgstr "картинка"
+
+#: pizza/core/models.py:164
+msgid "Expired"
+msgstr "истёк"
+
+#: pizza/core/models.py:182
+msgid "street name"
+msgstr "Название улицы"
+
+#: pizza/core/models.py:189
+msgid "keywords"
+msgstr "Ключевые слова для поиска"
+
+#: pizza/core/models.py:200
+msgid "available street"
+msgstr "доступная к заказу улица"
+
+#: pizza/core/models.py:201
+msgid "available streets"
+msgstr "доступные к заказам улицы"
+
+#: pizza/core/templates/action.html:23 pizza/core/templates/base.html:57
+#: pizza/core/templates/base.html:121 pizza/core/templates/base.html:153
+#: pizza/settings.py:300
+msgid "Actions"
+msgstr "Акции"
+
+#: pizza/core/templates/action.html:39 pizza/core/templates/index.html:74
+msgid "To load more"
+msgstr "Загрузить еще"
+
+#: pizza/core/templates/action.html:45 pizza/core/templates/policy.html:45
+msgid "Active actions"
+msgstr "действия"
+
+#: pizza/core/templates/action.html:58 pizza/core/templates/policy.html:58
+msgid "Expired actions"
+msgstr "действия"
+
+#: pizza/core/templates/action.html:64 pizza/core/templates/policy.html:64
+msgid "Action is expired"
+msgstr "Акция закончилась"
+
+#: pizza/core/templates/base.html:14
+msgid "Pizza Rally"
+msgstr ""
+
+#: pizza/core/templates/base.html:60 pizza/core/templates/base.html:154
+#: pizza/core/templates/base.html:164
+#: pizza/core/templates/translate_js/contacts.html:2
+msgid "Contacts"
+msgstr "Контакты"
+
+#: pizza/core/templates/base.html:63 pizza/core/templates/base.html:155
+#: pizza/core/templates/base.html:165
+#: pizza/core/templates/translate_js/contacts.html:4
+#: pizza/core/templates/translate_js/contacts.html:77
+msgid "Delivery"
+msgstr "Доставка"
+
+#: pizza/core/templates/base.html:160
+msgid "My profile"
+msgstr "Мой профиль"
+
+#: pizza/core/templates/base.html:162
+#: pizza/core/templates/translate_js/contacts.html:71
+msgid "Account registration"
+msgstr "Регистрация пользователя"
+
+#: pizza/core/templates/base.html:178
+msgid "All rights reserved"
+msgstr ""
+"Все права защищены.<br>Информация на сайте не является публичной "
+"офертой.<br><br><a href=\"/policy#persdannye\" style=\"text-decoration: "
+"underline;\">Обработка персональных данных</a> / <!--<a href=\"/policy\" "
+"style=\"text-decoration: underline;\">Политика возврата средств</a> / --><a "
+"href=\"/policy#rekvizity\" style=\"text-decoration: "
+"underline;\">Реквизиты</a> / <a href=\"/policy#oplata\" style=\"text-"
+"decoration: underline;\">Способы оплаты</a>"
+
+#: pizza/core/templates/email/confirmation.html:2
+#: pizza/core/templates/email/confirmation.txt:2
+msgid "Hello"
+msgstr "привет"
+
+#: pizza/core/templates/email/confirmation.html:4
+#, python-format
+msgid ""
+"\n"
+"  <p>\n"
+"    Please confirm your email: <a href=\"%(domain)s%(url)s\">%(domain)s%(url)s</a>\n"
+"  </p>\n"
+msgstr ""
+"\n"
+"<p>\n"
+"Пожалуйста, подтвердите ваш email: <a href=\"%(domain)s%(url)s\">%(domain)s%(url)s</a>\n"
+"</p>\n"
+
+#: pizza/core/templates/email/confirmation.txt:4
+#, python-format
+msgid ""
+"\n"
+"  Please confirm your email: %(domain)s%(url)s\n"
+msgstr ""
+"\n"
+"Пожалуйста, подтвердите ваш email: %(domain)s%(url)s\n"
+
+#: pizza/core/templates/index.html:56
+msgid "By categories"
+msgstr "По категориям"
+
+#: pizza/core/templates/index.html:65
+msgid "Products wasn't found"
+msgstr "Товары не найдены"
+
+#: pizza/core/templates/index.html:79
+msgid "Products loading"
+msgstr "Загрузка товаров"
+
+#: pizza/core/templates/index.html:88
+msgid ""
+"to taste the real Italian pizza, you don't need to go to Italy and order a "
+"pizza from us"
+msgstr ""
+"чтобы попробовать настоящую итальянскую пиццу, теперь не нужно ехать в "
+"Италию, закажите пиццу у нас! "
+
+#: pizza/core/templates/index.html:90
+msgid "go to pizza"
+msgstr "перейти к пиццам"
+
+#: pizza/core/templates/index.html:94
+msgid ""
+"In our pizza<br> we use the <br><span class=\"banner__text--"
+"big\"></span><br> natural <br>ingredients <br>from Italy!"
+msgstr ""
+"В нашей пицце<br> мы используем <br><span class=\"banner__text--"
+"big\">Только</span><br> натуральные <br>ингредиенты <br>из Италии!"
+
+#: pizza/core/templates/index.html:101
+msgid "We will deliver<br> order<br>place<br>the midst<br> of the match!"
+msgstr "Доставим<br>заказ на<br>место в<br>разгар<br>матча."
+
+#: pizza/core/templates/index.html:103
+msgid "Read more about delivery"
+msgstr "Подробнее о доставке"
+
+#: pizza/core/templates/index.html:113
+msgid "Massio Bottura"
+msgstr "Массимо Боттура"
+
+#: pizza/core/templates/index.html:115
+msgid "Italian chef"
+msgstr "Итальянский повар"
+
+#: pizza/core/templates/index.html:118
+msgid ""
+"In 1986, Massimo gets a chance to release his passion of cooking. It becomes"
+" the owner of his first trattoria \"Trattoria del Campazzo\". He learned the"
+" secrets of classic French cuisine at George Konya (Georges Cogny), and in "
+"1992 Alain Ducasse (Alain Ducasse) invite Massimo for a few months in the "
+"\"Le Louis XV\" in Monaco, where he continues his training."
+msgstr ""
+"В 1986 году Массимо выпадает шанс выпустить свою страсть к кулинарии. Он "
+"становится владельцем своей первой траттории \"Trattoria del Campazzo\". Он "
+"обучался секретам классической французской кухни у Джорджем Коньи (Georges "
+"Cogny), а в 1992 году Ален Дюкасс (Alain Ducasse) приглашает Массимо на "
+"несколько месяцев в «Le Louis XV» в Монако, где он продолжает свое обучение."
+
+#: pizza/core/templates/order.html:26
+#: pizza/core/templates/translate_js/contacts.html:65
+msgid "Step 1. Cart"
+msgstr "Шаг 1. Корзина"
+
+#: pizza/core/templates/order.html:27
+#: pizza/core/templates/translate_js/contacts.html:66
+msgid "Step 2. Order registration"
+msgstr "Шаг 2. Оформление"
+
+#: pizza/core/templates/order.html:28
+#: pizza/core/templates/translate_js/contacts.html:67
+msgid "Step 3. Finalize"
+msgstr "Шаг 3. Завершение"
+
+#: pizza/core/templates/order.html:37
+msgid "Please wait, payment status loading..."
+msgstr "Пожалуйста подождите, идет загрузка Вашего платежа..."
+
+#: pizza/core/templates/order.html:40
+msgid "We have an error on your payment"
+msgstr "Возникла ошибка при оплате заказа"
+
+#: pizza/core/templates/order.html:41
+msgid "Contact with us please"
+msgstr "Пожалуйста, свяжитесь с нами"
+
+#: pizza/core/templates/order.html:44 pizza/core/templates/order.html:47
+msgid "or follow link to pay"
+msgstr "или перейдите по ссылке для повторной оплаты"
+
+#: pizza/core/templates/translate_js/contacts.html:3
+#: pizza/core/templates/translate_js/contacts.html:5
+msgid "Close window"
+msgstr "Закрыть окно"
+
+#: pizza/core/templates/translate_js/contacts.html:6
+msgid "Time work store"
+msgstr "Время работы пиццерии"
+
+#: pizza/core/templates/translate_js/contacts.html:7
+msgid "Orders are accepted online and by phone"
+msgstr "Заказы принимаются онлайн и по телефону"
+
+#: pizza/core/templates/translate_js/contacts.html:8
+msgid "Payment by cash or Bank transfer"
+msgstr "Оплата наличными или банковской картой"
+
+#: pizza/core/templates/translate_js/contacts.html:9
+msgid "Our pizzeria has a certain delivery area. You can see below"
+msgstr ""
+"Наша пиццерия имеет определенную зону доставки. Вы можете увидеть ниже"
+
+#: pizza/core/templates/translate_js/contacts.html:10
+msgid "rub"
+msgstr "руб"
+
+#: pizza/core/templates/translate_js/contacts.html:11
+msgid "Add to cart"
+msgstr "В корзину"
+
+#: pizza/core/templates/translate_js/contacts.html:12
+msgid "Profile loading"
+msgstr "Загрузка профиля"
+
+#: pizza/core/templates/translate_js/contacts.html:13
+msgid "Main info"
+msgstr "Основная информация"
+
+#: pizza/core/templates/translate_js/contacts.html:14
+msgid "Save"
+msgstr "Сохранить"
+
+#: pizza/core/templates/translate_js/contacts.html:15
+msgid "Edit"
+msgstr "Редактировать"
+
+#: pizza/core/templates/translate_js/contacts.html:16
+msgid "PizzaRally does not publish any data without your permission."
+msgstr "PizzaRally не публикует какие-либо данные без вашего разрешения."
+
+#: pizza/core/templates/translate_js/contacts.html:17
+msgid "Name"
+msgstr "Имя"
+
+#: pizza/core/templates/translate_js/contacts.html:18
+msgid "Phone"
+msgstr "Номер телефона"
+
+#: pizza/core/templates/translate_js/contacts.html:19
+msgid "Password change is available"
+msgstr "Доступно изменение пароля"
+
+#: pizza/core/templates/translate_js/contacts.html:20
+msgid "Password change"
+msgstr "Изменение пароля"
+
+#: pizza/core/templates/translate_js/contacts.html:21
+msgid "Old password"
+msgstr "Старый пароль"
+
+#: pizza/core/templates/translate_js/contacts.html:22
+msgid "Type new password"
+msgstr "Введите новый пароль"
+
+#: pizza/core/templates/translate_js/contacts.html:23
+msgid "Retype new password"
+msgstr "Повторите ввод пароля"
+
+#: pizza/core/templates/translate_js/contacts.html:24
+msgid "Order history"
+msgstr "Заказы"
+
+#: pizza/core/templates/translate_js/contacts.html:25
+msgid "You have not made purchases!"
+msgstr "Вы еще не делали заказов!"
+
+#: pizza/core/templates/translate_js/contacts.html:26
+msgid "View status"
+msgstr "Посмотреть статус"
+
+#: pizza/core/templates/translate_js/contacts.html:27
+msgid "Social networks"
+msgstr "Ссылки на соц.сети"
+
+#: pizza/core/templates/translate_js/contacts.html:28
+msgid "To relate with VK"
+msgstr "Связать с вк"
+
+#: pizza/core/templates/translate_js/contacts.html:29
+msgid "To relate"
+msgstr "Связать"
+
+#: pizza/core/templates/translate_js/contacts.html:30
+msgid "To relate with Facebook"
+msgstr "Связать с Facebook"
+
+#: pizza/core/templates/translate_js/contacts.html:31
+msgid "To relate with Twitter"
+msgstr "Связать с Twitter"
+
+#: pizza/core/templates/translate_js/contacts.html:32
+msgid "To relate with Google+"
+msgstr "Связать с Google+"
+
+#: pizza/core/templates/translate_js/contacts.html:33
+msgid "Cart"
+msgstr "Корзина"
+
+#: pizza/core/templates/translate_js/contacts.html:34
+msgid "No items"
+msgstr "Список пуст"
+
+#: pizza/core/templates/translate_js/contacts.html:35
+msgid "Clean"
+msgstr "ОЧИСТИТЬ"
+
+#: pizza/core/templates/translate_js/contacts.html:36
+msgid "Go to order"
+msgstr "Перейти в корзину"
+
+#: pizza/core/templates/translate_js/contacts.html:37
+msgid "Favorites"
+msgstr "Избранное"
+
+#: pizza/core/templates/translate_js/contacts.html:38
+msgid "You have not favorite products"
+msgstr "Список избранного пуст"
+
+#: pizza/core/templates/translate_js/contacts.html:39
+#: pizza/core/templates/translate_js/contacts.html:52
+msgid "Sign in form"
+msgstr "Форма входа"
+
+#: pizza/core/templates/translate_js/contacts.html:40
+#: pizza/core/templates/translate_js/contacts.html:48
+#: pizza/core/templates/translate_js/contacts.html:57
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: pizza/core/templates/translate_js/contacts.html:41
+msgid "Type password"
+msgstr "Введите пароль"
+
+#: pizza/core/templates/translate_js/contacts.html:42
+msgid "If You have not changed password of an account, the code is"
+msgstr "Если Вы не изменяли пароль аккаунта, то им служит код"
+
+#: pizza/core/templates/translate_js/contacts.html:43
+msgid "a confirmation of the SMS, which was"
+msgstr "подтверждения из СМС, который был"
+
+#: pizza/core/templates/translate_js/contacts.html:44
+msgid "sent during registration"
+msgstr "отправлен при регистрации"
+
+#: pizza/core/templates/translate_js/contacts.html:45
+msgid "Forgot password?"
+msgstr "Забыли пароль"
+
+#: pizza/core/templates/translate_js/contacts.html:46
+msgid "Sign in"
+msgstr "Войти"
+
+#: pizza/core/templates/translate_js/contacts.html:47
+msgid "What is your name"
+msgstr "Как вас зовут"
+
+#: pizza/core/templates/translate_js/contacts.html:49
+msgid "Are you have an account?"
+msgstr "У вас есть аккаунт?"
+
+#: pizza/core/templates/translate_js/contacts.html:50
+msgid "to reset the code"
+msgstr "сбросить код"
+
+#: pizza/core/templates/translate_js/contacts.html:51
+msgid "User registration"
+msgstr "Регистрация пользователя"
+
+#: pizza/core/templates/translate_js/contacts.html:53
+msgid "To confirm"
+msgstr "Подтвердить"
+
+#: pizza/core/templates/translate_js/contacts.html:54
+msgid "Send code"
+msgstr "Отправить код"
+
+#: pizza/core/templates/translate_js/contacts.html:55
+msgid "Enter code from SMS message below"
+msgstr "Введите код из смс сообщения ниже"
+
+#: pizza/core/templates/translate_js/contacts.html:56
+msgid "To password reminder, enter the phone number"
+msgstr "Для восстановления пароля, введите номер телефона"
+
+#: pizza/core/templates/translate_js/contacts.html:58
+msgid "Send"
+msgstr "Отправить"
+
+#: pizza/core/templates/translate_js/contacts.html:59
+msgid "Password recover"
+msgstr "Восстановление пароля"
+
+#: pizza/core/templates/translate_js/contacts.html:61
+#: pizza/core/templates/translate_js/contacts.html:63
+msgid "For payment"
+msgstr "К оплате"
+
+#: pizza/core/templates/translate_js/contacts.html:62
+msgid "Cart is empty"
+msgstr "Корзина пуста"
+
+#: pizza/core/templates/translate_js/contacts.html:64
+msgid "Next"
+msgstr "Далее"
+
+#: pizza/core/templates/translate_js/contacts.html:68
+msgid "Cart loading"
+msgstr "Загрузка корзины"
+
+#: pizza/core/templates/translate_js/contacts.html:69
+msgid "step 2. Order registration"
+msgstr "шаг 2. Оформление"
+
+#: pizza/core/templates/translate_js/contacts.html:70
+msgid "step 3. Finalize"
+msgstr "шаг 3. Завершение"
+
+#: pizza/core/templates/translate_js/contacts.html:72
+msgid "Go to Sign up"
+msgstr "Перейти к регистрации"
+
+#: pizza/core/templates/translate_js/contacts.html:73
+msgid "Registration will take no more than a minute"
+msgstr "Регистрация займет у Вас не более минуты"
+
+#: pizza/core/templates/translate_js/contacts.html:74
+msgid "Without Sign Up"
+msgstr "Без регистрации"
+
+#: pizza/core/templates/translate_js/contacts.html:75
+msgid "Olympic Park, building the main tribune"
+msgstr "Олимпийский парк, главная трибуна"
+
+#: pizza/core/templates/translate_js/contacts.html:76
+msgid "Pickup"
+msgstr "Самовывоз"
+
+#: pizza/core/templates/translate_js/contacts.html:78
+msgid "Arena"
+msgstr "Стадион"
+
+#: pizza/core/templates/translate_js/contacts.html:79
+msgid "Address"
+msgstr "Адрес"
+
+#: pizza/core/templates/translate_js/contacts.html:80
+msgid "Select the arena"
+msgstr "Выберите стадион"
+
+#: pizza/core/templates/translate_js/contacts.html:81
+msgid "Tribune"
+msgstr "Трибуна"
+
+#: pizza/core/templates/translate_js/contacts.html:82
+msgid "Row number"
+msgstr "Номер ряд"
+
+#: pizza/core/templates/translate_js/contacts.html:83
+msgid "Seat number"
+msgstr "Место"
+
+#: pizza/core/templates/translate_js/contacts.html:84
+msgid "Street"
+msgstr "Улица"
+
+#: pizza/core/templates/translate_js/contacts.html:85
+msgid "House"
+msgstr "Дом"
+
+#: pizza/core/templates/translate_js/contacts.html:86
+msgid "Landmark"
+msgstr "Ориентир"
+
+#: pizza/core/templates/translate_js/contacts.html:87
+msgid "Comment"
+msgstr "Комментарий к адресу"
+
+#: pizza/core/templates/translate_js/contacts.html:88
+msgid "Cash"
+msgstr "Наличными"
+
+#: pizza/core/templates/translate_js/contacts.html:89
+msgid "Card"
+msgstr "Картой"
+
+#: pizza/core/templates/translate_js/contacts.html:90
+msgid "Invalid username/password, try again"
+msgstr "Неверный логин/пароль, попробуйте еще"
+
+#: pizza/core/templates/translate_js/contacts.html:91
+msgid "Internal server error"
+msgstr "Внутренняя ошибка сервера"
+
+#: pizza/core/templates/translate_js/contacts.html:92
+msgid "The password will be sent to You by sms"
+msgstr "Пароль будет отправлен Вам по смс"
+
+#: pizza/core/templates/translate_js/contacts.html:93
+msgid "Too frequent requests"
+msgstr "Слишком частые запросы"
+
+#: pizza/core/templates/translate_js/contacts.html:94
+msgid "Incorrect sent data"
+msgstr "Отправлены некорректные данные"
+
+#: pizza/core/templates/translate_js/contacts.html:95
+msgid "Phone was not found"
+msgstr "Телефон не найден"
+
+#: pizza/core/templates/translate_js/contacts.html:96
+msgid "This number is already registered"
+msgstr "Номер уже зарегистрирован"
+
+#: pizza/core/templates/translate_js/contacts.html:97
+msgid "Error loading profile"
+msgstr "Ошибка загрузки профиля"
+
+#: pizza/core/templates/translate_js/contacts.html:98
+msgid "Passwords didn't match"
+msgstr "Пароли не совпадают"
+
+#: pizza/core/templates/translate_js/contacts.html:99
+msgid "Profile was updated"
+msgstr "Профиль обновлен"
+
+#: pizza/core/templates/translate_js/contacts.html:100
+msgid "Error saving profile"
+msgstr "Ошибка сохранения профиля"
+
+#: pizza/core/templates/translate_js/contacts.html:101
+msgid "By clicking the button above, you consent to the processing"
+msgstr "Нажимая на кнопку выше, вы соглашаетесь на обработку"
+
+#: pizza/core/templates/translate_js/contacts.html:102
+msgid "of personal data"
+msgstr "персональных данных"
+
+#: pizza/core/templates/translate_js/contacts.html:103
+msgid "Total"
+msgstr "Итого"
+
+#: pizza/core/views.py:52 pizza/core/views/__init__.py:67
+msgid "User wasn't  found"
+msgstr "Пользователь не найден"
+
+#: pizza/core/views.py:71 pizza/core/views/__init__.py:86
+msgid "Your email successfully confirmed"
+msgstr "Ваш email успешно подтвержден"
+
+#: pizza/core/views.py:73 pizza/core/views/__init__.py:88
+msgid "Your email already confirmed"
+msgstr "Ваш email уже был успешно подтвержден"
+
+#: pizza/settings.py:156
+msgid "english"
+msgstr "английский"
+
+#: pizza/settings.py:157
+msgid "russian"
+msgstr "русский"
+
+#: pizza/settings.py:283
+msgid "Config"
+msgstr "Конфиг"
+
+#: pizza/settings.py:286
+msgid "Translations"
+msgstr "Переводы"
+
+#: pizza/settings.py:289
+msgid "General"
+msgstr "Основное"
+
+#: pizza/settings.py:292
+msgid "Users"
+msgstr "Пользователи"
+
+#: pizza/settings.py:293
+msgid "Groups"
+msgstr "Группы"
+
+#: pizza/settings.py:294
+msgid "Phone verifications"
+msgstr "Подтверждения номером телефонов"
+
+#: pizza/settings.py:295
+msgid "Orders"
+msgstr "Заказы"
+
+#: pizza/settings.py:297
+msgid "Misc"
+msgstr ""
+
+#: pizza/settings.py:301
+msgid "Categories"
+msgstr "Категории"
+
+#: pizza/settings.py:302
+msgid "Products"
+msgstr "Продукты"
+
+#: pizza/settings.py:303
+msgid "Streets"
+msgstr "Улицы"
+
+#: pizza/users/admin.py:21
+msgid "Personal info"
+msgstr "Персональные данные"
+
+#: pizza/users/admin.py:22
+msgid "Permissions"
+msgstr ""
+
+#: pizza/users/admin.py:24
+msgid "Important dates"
+msgstr ""
+
+#: pizza/users/models.py:81
+msgid "first name"
+msgstr "имя"
+
+#: pizza/users/models.py:87
+msgid "last name"
+msgstr "фамилия"
+
+#: pizza/users/models.py:93
+msgid "surname"
+msgstr "фамилия"
+
+#: pizza/users/models.py:99
+msgid "email address"
+msgstr "email"
+
+#: pizza/users/models.py:104
+msgid "email confirmed"
+msgstr "подтверждение email"
+
+#: pizza/users/models.py:109
+msgid "staff status"
+msgstr "статус сотрудника"
+
+#: pizza/users/models.py:111
+msgid "Designates whether the user can log into this admin site."
+msgstr "указывает, может ли пользователь войти в этот админ-сайт."
+
+#: pizza/users/models.py:118
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+"указывает, должен ли этот пользователь считаться активным. Снимите этот "
+"флажок, а не удаляйте учетные записи."
+
+#: pizza/users/models.py:123
+msgid "date joined"
+msgstr "дата добавления"
+
+#: pizza/users/models.py:137
+msgid "users"
+msgstr "пользователи"
+
+#: pizza/users/models.py:243
+msgid "password hash"
+msgstr ""
+
+#: pizza/users/models.py:246
+msgid "user password"
+msgstr "пароль пользователя"
+
+#: pizza/users/models.py:247
+msgid "user passwords"
+msgstr "пароли пользователей"
+
+#: pizza/users/models.py:264
+msgid "session key"
+msgstr ""
+
+#: pizza/users/models.py:269
+msgid "sms code"
+msgstr "код смс"
+
+#: pizza/users/models.py:270
+msgid "failed attempts"
+msgstr "неудачные попытки"
+
+#: pizza/users/serializers.py:103
+msgid "passwords field is empty"
+msgstr "пароль не может быть пустым"
+
+#: pizza/users/serializers.py:108
+msgid "old password didn't match"
+msgstr "старый пароль неверный"
+
+#: pizza/users/serializers.py:111
+msgid "password was not matched"
+msgstr "пароль не совпал"
+
+#: pizza/users/tasks.py:51
+msgid "Email confirmation"
+msgstr "Email подтвержден"
+
+#: pizza/users/validators.py:11
+msgid "Incorrect phone number"
+msgstr "Некорректный номер телефона"
+
+#: venv/lib/python3.5/site-packages/django/contrib/messages/apps.py:7
+msgid "Messages"
+msgstr "Сообщение"
+
+#: venv/lib/python3.5/site-packages/django/contrib/sitemaps/apps.py:7
+msgid "Site Maps"
+msgstr "Карта сайта"
+
+#: venv/lib/python3.5/site-packages/django/contrib/staticfiles/apps.py:7
+msgid "Static Files"
+msgstr "Статичные файлы"
+
+#: venv/lib/python3.5/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/core/paginator.py:43
+msgid "That page number is not an integer"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/core/paginator.py:45
+msgid "That page number is less than 1"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/core/paginator.py:50
+msgid "That page contains no results"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:34
+msgid "Enter a valid value."
+msgstr "Введите верное значение."
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:107
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:668
+msgid "Enter a valid URL."
+msgstr "Введите правильный URL."
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:160
+msgid "Enter a valid integer."
+msgstr "Введите действительное целое число. "
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:171
+msgid "Enter a valid email address."
+msgstr "Введите действительный email адрес. "
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:245
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:252
+msgid ""
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:257
+#: venv/lib/python3.5/site-packages/django/core/validators.py:277
+msgid "Enter a valid IPv4 address."
+msgstr "Введите верный IPv4 адрес"
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:262
+#: venv/lib/python3.5/site-packages/django/core/validators.py:278
+msgid "Enter a valid IPv6 address."
+msgstr "Введите верный IPv6 адрес"
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:272
+#: venv/lib/python3.5/site-packages/django/core/validators.py:276
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr "Введите верный IPv4 или IPv6 адрес"
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:308
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1131
+msgid "Enter only digits separated by commas."
+msgstr "Введите только цифры разделенные запятыми"
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:314
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Убедитесь, что это значение %(limit_value)s (это %(show_value)s)."
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:345
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Ensure this value is less than or equal to %(limit_value)s."
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:354
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Убедитесь, что это значение меньше или равно %(limit_value)s."
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:364
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:379
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:399
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] "Убедитесь, что общее число не более %(max)s"
+msgstr[1] "Убедитесь, что в сумме не более %(max)s"
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:404
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:409
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.5/site-packages/django/core/validators.py:463
+#, python-format
+msgid ""
+"File extension '%(extension)s' is not allowed. Allowed extensions are: "
+"'%(allowed_extensions)s'."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/base.py:1207
+#: venv/lib/python3.5/site-packages/django/forms/models.py:732
+msgid "and"
+msgstr "и"
+
+#: venv/lib/python3.5/site-packages/django/db/models/base.py:1209
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:116
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:117
+msgid "This field cannot be null."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:118
+msgid "This field cannot be blank."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:119
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s с этим %(field_label)s уже существует."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:123
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:140
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Поле типа: %(field_type)s"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:901
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1809
+msgid "Integer"
+msgstr "Целое число"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:905
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1807
+#, python-format
+msgid "'%(value)s' value must be an integer."
+msgstr "'%(value)s' значение должно быть целым числом."
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:978
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1878
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:990
+#, python-format
+msgid "'%(value)s' value must be either True or False."
+msgstr ""
+"'%(value)s' значение должно быть либо правда (true), либо лож (false)."
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:992
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1058
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "Строка (до %(max_length)s)"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1115
+msgid "Comma-separated integers"
+msgstr "Целые числа, разделенные запятыми"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1172
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1174
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1319
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1177
+msgid "Date (without time)"
+msgstr "Дата (без времени)"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1317
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1321
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1325
+msgid "Date (with time)"
+msgstr "Дата (со временем)"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1475
+#, python-format
+msgid "'%(value)s' value must be a decimal number."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1477
+msgid "Decimal number"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1628
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in [DD] "
+"[HH:[MM:]]ss[.uuuuuu] format."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1631
+msgid "Duration"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1683
+msgid "Email address"
+msgstr "Email адрес"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1707
+msgid "File path"
+msgstr "Путь к файлу"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1773
+#, python-format
+msgid "'%(value)s' value must be a float."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1775
+msgid "Floating point number"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1893
+msgid "IPv4 address"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1924
+msgid "IP address"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2006
+#, python-format
+msgid "'%(value)s' value must be either None, True or False."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2008
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2071
+msgid "Positive integer"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2083
+msgid "Positive small integer"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2096
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2130
+msgid "Small integer"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2137
+msgid "Text"
+msgstr "Текст"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2163
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"'%(value)s' значение имеет неверный формат. Оно должно быть в формате "
+"HH:MM[:ss[.uuuuuu]]."
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2165
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"'%(value)s' значение имеет ферный формат (HH:MM[:ss[.uuuuuu]]), но это "
+"неверное время."
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2168
+msgid "Time"
+msgstr "Время"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2296
+msgid "URL"
+msgstr "URL"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2319
+msgid "Raw binary data"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:2366
+#, python-format
+msgid "'%(value)s' is not a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/files.py:228
+msgid "File"
+msgstr "Файл"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/files.py:391
+msgid "Image"
+msgstr "Изображение"
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/related.py:788
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/related.py:790
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/related.py:1029
+msgid "One-to-one relationship"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/related.py:1104
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/related.py:1105
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/db/models/fields/related.py:1147
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the
+#. label
+#: venv/lib/python3.5/site-packages/django/forms/boundfield.py:181
+msgid ":?.!"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:56
+msgid "This field is required."
+msgstr "Обязательное к заполению поле"
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:257
+msgid "Enter a whole number."
+msgstr "Введите целое число."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:302
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:339
+msgid "Enter a number."
+msgstr "Введите число."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:417
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:1140
+msgid "Enter a valid date."
+msgstr "Введите правильную дату."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:441
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:1141
+msgid "Enter a valid time."
+msgstr "Введите правильное время."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:463
+msgid "Enter a valid date/time."
+msgstr "Введите правильные дату/время."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:492
+msgid "Enter a valid duration."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:546
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "Файл не отправлен. Проверьте тип кодировки в форме."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:547
+msgid "No file was submitted."
+msgstr "Файл не отправлен."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:548
+msgid "The submitted file is empty."
+msgstr "Представленный файл пуст."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:550
+#, python-format
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:553
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:616
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"Загрузите действительное изображение. Загруженный вами файл был либо не "
+"изображением, либо поврежденным изображением."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:771
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:867
+#: venv/lib/python3.5/site-packages/django/forms/models.py:1246
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+"Сделайте правильный выбор. %(value)s is not one of the available choices."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:868
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:983
+#: venv/lib/python3.5/site-packages/django/forms/models.py:1245
+msgid "Enter a list of values."
+msgstr "Введите список значений."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:984
+msgid "Enter a complete value."
+msgstr "Введите полное значение."
+
+#: venv/lib/python3.5/site-packages/django/forms/fields.py:1199
+msgid "Enter a valid UUID."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python3.5/site-packages/django/forms/forms.py:87
+msgid ":"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/forms.py:213
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/formsets.py:97
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/formsets.py:355
+#, python-format
+msgid "Please submit %d or fewer forms."
+msgid_plural "Please submit %d or fewer forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.5/site-packages/django/forms/formsets.py:362
+#, python-format
+msgid "Please submit %d or more forms."
+msgid_plural "Please submit %d or more forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.5/site-packages/django/forms/formsets.py:390
+#: venv/lib/python3.5/site-packages/django/forms/formsets.py:392
+msgid "Order"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/formsets.py:394
+msgid "Delete"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/models.py:727
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/models.py:731
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/models.py:737
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"Пожалуйста исправьте повторяющиеся данные %(field_name)s, которые должны "
+"быть уникальные для %(lookup)s in %(date_field)s."
+
+#: venv/lib/python3.5/site-packages/django/forms/models.py:746
+msgid "Please correct the duplicate values below."
+msgstr "Пожалуйста, исправьте повторяющиеся значения ниже."
+
+#: venv/lib/python3.5/site-packages/django/forms/models.py:1076
+msgid "The inline foreign key did not match the parent instance primary key."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/models.py:1137
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+"Сделайте правильный выбор. Этот выбор не является одним из доступных "
+"вариантов."
+
+#: venv/lib/python3.5/site-packages/django/forms/models.py:1248
+#, python-format
+msgid "\"%(pk)s\" is not a valid value for a primary key."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/utils.py:172
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/forms/widgets.py:377
+msgid "Clear"
+msgstr "Очистить"
+
+#: venv/lib/python3.5/site-packages/django/forms/widgets.py:378
+msgid "Currently"
+msgstr "В данный момент"
+
+#: venv/lib/python3.5/site-packages/django/forms/widgets.py:379
+msgid "Change"
+msgstr "Изменить"
+
+#: venv/lib/python3.5/site-packages/django/forms/widgets.py:697
+msgid "Unknown"
+msgstr "Неизвестный"
+
+#: venv/lib/python3.5/site-packages/django/forms/widgets.py:698
+msgid "Yes"
+msgstr "Да"
+
+#: venv/lib/python3.5/site-packages/django/forms/widgets.py:699
+msgid "No"
+msgstr "Нет"
+
+#: venv/lib/python3.5/site-packages/django/template/defaultfilters.py:849
+msgid "yes,no,maybe"
+msgstr "да, нет, может быть"
+
+#: venv/lib/python3.5/site-packages/django/template/defaultfilters.py:878
+#: venv/lib/python3.5/site-packages/django/template/defaultfilters.py:895
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.5/site-packages/django/template/defaultfilters.py:897
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/template/defaultfilters.py:899
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/template/defaultfilters.py:901
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/template/defaultfilters.py:903
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/template/defaultfilters.py:905
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dateformat.py:66
+msgid "p.m."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dateformat.py:67
+msgid "a.m."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dateformat.py:72
+msgid "PM"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dateformat.py:73
+msgid "AM"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dateformat.py:158
+msgid "midnight"
+msgstr "полночь"
+
+#: venv/lib/python3.5/site-packages/django/utils/dateformat.py:160
+msgid "noon"
+msgstr "полдень"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:6
+msgid "Monday"
+msgstr "Понедельник"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:6
+msgid "Tuesday"
+msgstr "Вторник"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:6
+msgid "Wednesday"
+msgstr "Среда"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:6
+msgid "Thursday"
+msgstr "Четверг"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:6
+msgid "Friday"
+msgstr "Пятница"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:7
+msgid "Saturday"
+msgstr "Суббота"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:7
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:10
+msgid "Mon"
+msgstr "Пн."
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:10
+msgid "Tue"
+msgstr "Вт."
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:10
+msgid "Wed"
+msgstr "Ср."
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:10
+msgid "Thu"
+msgstr "Чт."
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:10
+msgid "Fri"
+msgstr "Пт."
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:11
+msgid "Sat"
+msgstr "Сб."
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:11
+msgid "Sun"
+msgstr "Вс."
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:18
+msgid "January"
+msgstr "Январь"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:18
+msgid "February"
+msgstr "Февраль"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:18
+msgid "March"
+msgstr "Март"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:18
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:18
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:18
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:19
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:19
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:19
+msgid "September"
+msgstr "Сентябрь"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:19
+msgid "October"
+msgstr "Октябрь"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:19
+msgid "November"
+msgstr "Ноябрь"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:20
+msgid "December"
+msgstr "Декабрь"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:23
+msgid "jan"
+msgstr "янв"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:23
+msgid "feb"
+msgstr "фев"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:23
+msgid "mar"
+msgstr "мар"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:23
+msgid "apr"
+msgstr "апр"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:23
+msgid "may"
+msgstr "май"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:23
+msgid "jun"
+msgstr "июн"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:24
+msgid "jul"
+msgstr "июл"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:24
+msgid "aug"
+msgstr "авг"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:24
+msgid "sep"
+msgstr "сен"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:24
+msgid "oct"
+msgstr "окт"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:24
+msgid "nov"
+msgstr "ноя"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:24
+msgid "dec"
+msgstr "дек"
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:31
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:32
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:33
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:34
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:35
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:36
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:37
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:38
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:39
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:40
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:41
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:42
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:45
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:46
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:47
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:48
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:49
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:50
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:51
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:52
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:53
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:54
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:55
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/dates.py:56
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/ipv6.py:12
+msgid "This is not a valid IPv6 address."
+msgstr "Это неправильный IPv6 адрес."
+
+#: venv/lib/python3.5/site-packages/django/utils/text.py:81
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s..."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/text.py:251
+msgid "or"
+msgstr "или"
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python3.5/site-packages/django/utils/text.py:270
+#: venv/lib/python3.5/site-packages/django/utils/timesince.py:71
+msgid ", "
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d год"
+msgstr[1] "%d лет"
+
+#: venv/lib/python3.5/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d месяц "
+msgstr[1] "%d месяцев"
+
+#: venv/lib/python3.5/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d неделя "
+msgstr[1] "%d недель"
+
+#: venv/lib/python3.5/site-packages/django/utils/timesince.py:14
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d день "
+msgstr[1] "%d дней"
+
+#: venv/lib/python3.5/site-packages/django/utils/timesince.py:15
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d час "
+msgstr[1] "%d часов"
+
+#: venv/lib/python3.5/site-packages/django/utils/timesince.py:16
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d минута "
+msgstr[1] "%d минут"
+
+#: venv/lib/python3.5/site-packages/django/utils/timesince.py:60
+msgid "0 minutes"
+msgstr "0 минут"
+
+#: venv/lib/python3.5/site-packages/django/views/csrf.py:109
+msgid "Forbidden"
+msgstr "Запрещено"
+
+#: venv/lib/python3.5/site-packages/django/views/csrf.py:110
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/csrf.py:114
+msgid ""
+"You are seeing this message because this HTTPS site requires a 'Referer "
+"header' to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/csrf.py:119
+msgid ""
+"If you have configured your browser to disable 'Referer' headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for 'same-"
+"origin' requests."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/csrf.py:124
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/csrf.py:129
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for 'same-origin' requests."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/csrf.py:134
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/debug.py:520
+msgid "Welcome to Django"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/debug.py:521
+msgid "It worked!"
+msgstr "это работает!"
+
+#: venv/lib/python3.5/site-packages/django/views/debug.py:522
+msgid "Congratulations on your first Django-powered page."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/debug.py:524
+msgid ""
+"Next, start your first app by running <code>python manage.py startapp "
+"[app_label]</code>."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/debug.py:527
+msgid ""
+"You're seeing this message because you have <code>DEBUG = True</code> in "
+"your Django settings file and you haven't configured any URLs. Get to work!"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:48
+msgid "No year specified"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:72
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:132
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:249
+msgid "Date out of range"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:107
+msgid "No month specified"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:169
+msgid "No day specified"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:225
+msgid "No week specified"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:387
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:415
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:669
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/dates.py:703
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/detail.py:55
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/list.py:77
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/list.py:82
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/generic/list.py:172
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/static.py:44
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/static.py:46
+#, python-format
+msgid "\"%(path)s\" does not exist"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/django/views/static.py:86
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:54
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:61
+#: venv/lib/python3.5/site-packages/djcelery/models.py:34
+#: venv/lib/python3.5/site-packages/djcelery/models.py:338
+msgid "state"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:68
+#: venv/lib/python3.5/site-packages/djcelery/models.py:347
+msgid "ETA"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:75
+msgid "when"
+msgstr "где"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:118
+msgid "Task detail"
+msgstr "Детали задачи"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:119
+msgid "Tasks"
+msgstr "Задачи"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:134
+#: venv/lib/python3.5/site-packages/djcelery/models.py:340
+msgid "UUID"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:158
+msgid "Revoke selected tasks"
+msgstr "Отменить выбранные задачи"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:164
+msgid "Terminate selected tasks"
+msgstr "Завершение выбранных задач"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:170
+msgid "Kill selected tasks"
+msgstr "Убить выбранные задачи"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:177
+#: venv/lib/python3.5/site-packages/djcelery/templates/djcelery/confirm_rate_limit.html:9
+msgid "Rate limit selected tasks"
+msgstr "Ограничение скорости выбранных задач"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:190
+msgid "Rate limit selection"
+msgstr "Выбор ограничения скорости"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:215
+msgid "Node detail"
+msgstr "Детали узла"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:216
+msgid "Worker Nodes"
+msgstr "Рабочие узлы"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:223
+msgid "Shutdown selected worker nodes"
+msgstr "Выключение выбранных рабочих узлов"
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:227
+msgid "Enable event mode for selected nodes."
+msgstr "Включить режим событий для выбранных узлов."
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:232
+msgid "Disable event mode for selected nodes."
+msgstr "Выключить режим событий для выбранных узлов."
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:285
+msgid "Task (registered)"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:287
+msgid "Task (custom)"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:300
+msgid "Need name of task"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:311
+#, python-format
+msgid "Unable to parse JSON: %s"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:360
+msgid "Enable selected periodic tasks"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/admin.py:365
+msgid "Disable selected periodic tasks"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:10
+#, python-brace-format
+msgid "{num} year ago"
+msgstr "{num} год назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:10
+#, python-brace-format
+msgid "{num} years ago"
+msgstr "{num} лет назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:14
+#, python-brace-format
+msgid "{num} month ago"
+msgstr "{num} месяц назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:14
+#, python-brace-format
+msgid "{num} months ago"
+msgstr "{num} месяцев назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:18
+#, python-brace-format
+msgid "{num} week ago"
+msgstr "{num} неделю назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:18
+#, python-brace-format
+msgid "{num} weeks ago"
+msgstr "{num} недель назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:22
+#, python-brace-format
+msgid "{num} day ago"
+msgstr "{num} день назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:22
+#, python-brace-format
+msgid "{num} days ago"
+msgstr "{num} дней назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:56
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:71
+msgid "just now"
+msgstr "сейчас"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:62
+#, python-brace-format
+msgid "{minutes} minute ago"
+msgstr "{minutes} минуту назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:63
+#, python-brace-format
+msgid "{minutes} minutes ago"
+msgstr "{minutes} минут назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:68
+#, python-brace-format
+msgid "{seconds} second ago"
+msgstr "{seconds} секунду назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:69
+#, python-brace-format
+msgid "{seconds} seconds ago"
+msgstr "{seconds} секунд назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:74
+#, python-brace-format
+msgid "{hours} hour ago"
+msgstr "{hours} час назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:74
+#, python-brace-format
+msgid "{hours} hours ago"
+msgstr "{hours} час назад"
+
+#: venv/lib/python3.5/site-packages/djcelery/humanize.py:78
+#, python-brace-format
+msgid "yesterday at {time}"
+msgstr "вчера в {time}"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:32
+msgid "task id"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:38
+msgid "done at"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:39
+#: venv/lib/python3.5/site-packages/djcelery/models.py:350
+msgid "traceback"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:50
+msgid "task state"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:51
+msgid "task states"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:69
+msgid "group id"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:78
+msgid "saved group result"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:79
+msgid "saved group results"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:91
+msgid "Days"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:92
+msgid "Hours"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:93
+msgid "Minutes"
+msgstr "Минуты"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:94
+msgid "Seconds"
+msgstr "Секунды"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:95
+msgid "Microseconds"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:100
+msgid "every"
+msgstr "каждый"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:102
+msgid "period"
+msgstr "период"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:106
+#: venv/lib/python3.5/site-packages/djcelery/models.py:217
+msgid "interval"
+msgstr "интервал"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:107
+msgid "intervals"
+msgstr "интервалы"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:127
+#, python-brace-format
+msgid "every {0.period_singular}"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:128
+#, python-brace-format
+msgid "every {0.every:d} {0.period}"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:137
+msgid "minute"
+msgstr "минут"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:138
+msgid "hour"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:140
+msgid "day of week"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:143
+msgid "day of month"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:146
+msgid "month of year"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:150
+#: venv/lib/python3.5/site-packages/djcelery/models.py:221
+msgid "crontab"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:151
+msgid "crontabs"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:212
+msgid "Useful description"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:214
+msgid "task name"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:223
+msgid "Use one of interval/crontab"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:226
+#: venv/lib/python3.5/site-packages/djcelery/models.py:345
+msgid "Arguments"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:227
+msgid "JSON encoded positional arguments"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:230
+#: venv/lib/python3.5/site-packages/djcelery/models.py:346
+msgid "Keyword arguments"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:231
+msgid "JSON encoded keyword arguments"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:234
+#: venv/lib/python3.5/site-packages/kombu/transport/django/models.py:20
+msgid "queue"
+msgstr "очередь"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:235
+msgid "Queue defined in CELERY_QUEUES"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:238
+msgid "exchange"
+msgstr "обмен"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:241
+msgid "routing key"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:244
+#: venv/lib/python3.5/site-packages/djcelery/models.py:348
+msgid "expires"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:247
+msgid "enabled"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:257
+msgid "description"
+msgstr "описание"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:263
+msgid "periodic task"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:264
+msgid "periodic tasks"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:304
+msgid "hostname"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:305
+msgid "last heartbeat"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:312
+#: venv/lib/python3.5/site-packages/djcelery/models.py:357
+msgid "worker"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:313
+msgid "workers"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:344
+msgid "event received at"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:349
+msgid "result"
+msgstr "результат"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:352
+msgid "execution time"
+msgstr "время исполнения"
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:353
+msgid "in seconds if task succeeded"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:355
+msgid "number of retries"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:366
+msgid "task"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/models.py:367
+msgid "tasks"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/djcelery/templates/admin/djcelery/change_list.html:6
+#: venv/lib/python3.5/site-packages/djcelery/templates/djcelery/confirm_rate_limit.html:6
+#: venv/lib/python3.5/site-packages/solo/templates/admin/solo/change_form.html:7
+#: venv/lib/python3.5/site-packages/solo/templates/admin/solo/object_history.html:6
+msgid "Home"
+msgstr "Главная"
+
+#: venv/lib/python3.5/site-packages/djcelery/templates/djcelery/confirm_rate_limit.html:22
+msgid "Rate limit"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/kombu/transport/django/models.py:21
+msgid "queues"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/kombu/transport/django/models.py:28
+msgid "payload"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/kombu/transport/django/models.py:37
+msgid "message"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/kombu/transport/django/models.py:38
+msgid "messages"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/kombu/transport/qpid.py:1295
+#, python-format
+msgid "Attempting to connect to qpid with SASL mechanism %s"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/kombu/transport/qpid.py:1300
+#, python-format
+msgid "Connected to qpid with SASL mechanism %s"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/kombu/transport/qpid.py:1318
+#, python-format
+msgid "Unable to connect to qpid with SASL mechanism %s"
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/solo/admin.py:50
+#, python-format
+msgid "%(obj)s was changed successfully."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/solo/admin.py:52
+msgid "You may edit it again below."
+msgstr "Вы можете изменить его ниже."
+
+#: venv/lib/python3.5/site-packages/solo/templates/admin/solo/change_form.html:14
+#: venv/lib/python3.5/site-packages/solo/templates/admin/solo/object_history.html:9
+msgid "History"
+msgstr "История"
+
+#: venv/lib/python3.5/site-packages/solo/templates/admin/solo/change_form.html:15
+msgid "View on site"
+msgstr "Посмотреть на сайте"
+
+#: venv/lib/python3.5/site-packages/solo/templatetags/solo_tags.py:22
+#, python-format
+msgid ""
+"Templatetag requires the model dotted path: 'app_label.ModelName'. Received "
+"'%s'."
+msgstr ""
+
+#: venv/lib/python3.5/site-packages/solo/templatetags/solo_tags.py:28
+#, python-format
+msgid ""
+"Could not get the model name '%(model)s' from the application named "
+"'%(app)s'"
+msgstr ""
+
+#~ msgid "More"
+#~ msgstr "Еще"
+
+#~ msgid "notes"
+#~ msgstr "заметки"

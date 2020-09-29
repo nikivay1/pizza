@@ -1,0 +1,70 @@
+/* line 20, ../sass/delivery.sass */
+.delivery {
+  font-family: 'GothamPro';
+  font-size: 14px;
+  justify-content: center;
+  flex-direction: column;
+  width: 1366px;
+}
+
+/* line 28, ../sass/delivery.sass */
+.delivery-header {
+  margin: 5px 105px;
+  align-items: center;
+}
+/* line 31, ../sass/delivery.sass */
+.delivery-header img {
+  margin-right: 15px;
+}
+
+/* line 34, ../sass/delivery.sass */
+.delivery-delivery {
+  font-family: 'GothamPro-Light';
+  font-size: 24px;
+}
+
+/* line 38, ../sass/delivery.sass */
+.delivery-close {
+  margin-left: auto;
+  font-family: 'GothamPro';
+  font-size: 14px;
+  color: #c9c9c9;
+  margin-right: 15px;
+}
+
+/* line 45, ../sass/delivery.sass */
+.delivery-timework {
+  font-family: 'GothamPro-Medium';
+  font-size: 20px;
+  position: relative;
+  padding-left: 35px;
+}
+.delivery-timework:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url('../img/clock.png');
+}
+
+/* line 53, ../sass/delivery.sass */
+.delivery-text {
+  font-family: 'GothamPro-Light';
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 35px;
+  /* margin: 7px 140px; */
+}
+/* line 57, ../sass/delivery.sass */
+.delivery-text span {
+  font-family: 'GothamPro';
+}
+
+/* line 60, ../sass/delivery.sass */
+/* .delivery-map {
+  margin-top: 27px;
+} */

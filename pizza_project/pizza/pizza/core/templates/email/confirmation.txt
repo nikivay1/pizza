@@ -1,0 +1,6 @@
+{% load i18n %}
+{% trans "Hello" %}, {{ user }}
+
+{% blocktrans %}
+  Please confirm your email: {{ domain }}{{ url }}
+{% endblocktrans %}

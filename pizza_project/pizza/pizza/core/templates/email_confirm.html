@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block extra_head %}
+  <script src="{% static "js/custom.js" %}" type="application/javascript"></script>
+  <script src="{% static "angular.min.js" %}" type="application/javascript"></script>
+  <script src="{% static "angular-cookies.js" %}" type="application/javascript"></script>
+  <script src="{% static "modal.min.js" %}" type="application/javascript"></script>
+  <script src="{% static "app/js/app.js" %}" type="application/javascript"></script>
+  <script src="{% static "app/js/factory.js" %}" type="application/javascript"></script>
+  <script src="{% static "app/js/controllers.js" %}" type="application/javascript"></script>
+  <meta http-equiv="refresh" content="180">
+{% endblock extra_head %}
+
+{% block content %}
+  <div class="cart-body" ng-controller="orderCtrl">
+    <h4 align="center">{{ message }}</h4>
+  </div>
+{% endblock content %}

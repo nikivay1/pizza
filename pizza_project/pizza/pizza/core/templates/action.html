@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block extra_head %}
+  <script src="{% static "js/custom.js" %}" type="application/javascript"></script>
+  <link rel="stylesheet" href="{% static 'css/angucomplete.css' %}"/>
+  <script src="{% static "app/app.js" %}" type="application/javascript"></script>
+{% endblock extra_head %}
+
+{% block content %}
+  <div class="action" ng-controller="actionCtrl">
+    <div class="action-left">
+      <div class="action-main">
+        <div class="action-header">
+          <span>{% trans "Actions" %} Pizza Rally</span>
+        </div>
+          {% verbatim %}
+            <div class="action-content" ng-repeat="actionItem in actions">
+              <div class="action-discont" ng-style="{'background-image': 'url(' + actionItem.picture + ')'}">
+                <span class="act-disc-title" ng-bind="actionItem.title"></span>
+                <div ng-class="{'disc-date': !actionItem.expired, 'disc-disabled': actionItem.expired}">
+                  <img ng-src="{{ getActionDateIcon(actionItem) }}">
+                  <span ng-bind="getActionDate(actionItem)"></span>
+                </div>
+              </div>
+          {% endverbatim %}
+        </div>
+      </div>
+      <div class="action-load-more" ng-click="nextPage()" ng-if="hasNext">
+        <img src="{% static 'img/download-24.png' %}">
+        <span>{% trans "To load more" %}</span>
+      </div>
+    </div>
+    <div class="action-right">
+      <div class="action-active act-act-mar">
+        <div class="action-header">
+          <span>{% trans "Active actions" %}</span>
+        </div>
+        <div class="action-news" ng-repeat="actionItem in activeList">
+          <img src="{% static 'img/sale-24.png' %}">
+          <div>
+            <span ng-bind='actionItem.title'></span>
+            <span ng-bind="getActionDate(actionItem)"></span>
+          </div>
+        </div>
+        <div class="action-border"></div>
+      </div>
+      <div class="action-active">
+        <div class="action-header">
+          <span>{% trans "Expired actions" %}</span>
+        </div>
+        <div class="action-news" ng-repeat="actionItem in expiredList">
+          <img src="{% static 'img/sale-24.png' %}">
+          <div>
+            <span ng-bind="actionItem.title"></span>
+            <span>{% trans "Action is expired" %}</span>
+          </div>
+        </div>
+        <div class="action-border"></div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

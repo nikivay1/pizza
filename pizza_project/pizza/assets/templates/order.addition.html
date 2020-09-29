@@ -1,0 +1,12 @@
+<div class="cart-footer">
+    <div class="next-step mobile-hidden"><span class="ns-green" ng-bind="('For payment' | translate) + ':'"></span>
+        <div class="ns-button button button--greencolor"><span>{{ getTotalPrice() }} {{ 'rub' | translate }}</span></div>
+        <div class="ns-button button button--blackcolor ns-prev" ng-click="goStep('cart')">Назад</div>
+        <div class="ns-button button button--redcolor ns-next" ng-click="updateAddress()"><span ng-bind="'step 3. Finalize' | translate"></span></div>
+    </div>
+    <div class="mobile-next-step mobile-visible">
+    	<div class="link_block"><a class="back_link" ng-click="goStep('cart')"></a></div>
+    	<div ng-hide="cart.user" class="link_block"><a class="reg_link" ng-click="openSignUpDialog()"></a></div>
+    	<div><a class="next_link" ng-click="updateAddress()"><span ng-bind="'Next' | translate"></span></a></div>
+    </div>
+</div>
